@@ -6,19 +6,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Kubernetes architecture is often perceived as a black box—with terms like &quot;control plane,&quot; &quot;kubelet,&quot; and &quot;scheduler&quot; thrown around without deep clarity. This section tackles myths rooted in these components, where surface-level understanding leads to poor design choices and debugging frustrations.">
+        <meta name="description" content="In Kubernetes, compute may steal the spotlight — but persistent storage is what truly powers workloads.">
       
       
         <meta name="author" content="Rajesh Deshpande">
       
       
-        <link rel="canonical" href="https://kubernetesmyths.com/architecture_myths/overview/">
+        <link rel="canonical" href="https://kubernetesmyths.com/storage_myths/overview/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../../workload_myths/Myth5_K8s_Injects_Svc_Info_Into_A_Pods_Env_Var/">
       
       
-        <link rel="next" href="../Myth1_Kubelet_is_Exclusive_to_Worker_Nodes/">
+        <link rel="next" href="../../general_myths/overview/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#kubernetes-architecture-myths-overview" class="md-skip">
+        <a href="#kubernetes-storage-myths-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -194,13 +194,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../architecture_myths/overview/" class="md-tabs__link">
           
   
   
@@ -256,11 +254,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../storage_myths/overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -372,31 +372,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -409,7 +404,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Architecture Myths
@@ -420,32 +415,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Overview
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../architecture_myths/overview/" class="md-nav__link">
         
   
   
@@ -456,35 +429,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#subtopics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Subtopics
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -497,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Myth1_Kubelet_is_Exclusive_to_Worker_Nodes/" class="md-nav__link">
+      <a href="../../architecture_myths/Myth1_Kubelet_is_Exclusive_to_Worker_Nodes/" class="md-nav__link">
         
   
   
@@ -520,7 +464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Myth2_Kubernetes_Clusters_Can%27t_Function_Without_Kube-Proxy/" class="md-nav__link">
+      <a href="../../architecture_myths/Myth2_Kubernetes_Clusters_Can%27t_Function_Without_Kube-Proxy/" class="md-nav__link">
         
   
   
@@ -543,7 +487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Myth3_Kubernetes_Networking_Works_Fine_Without_a_CNI_Plugin/" class="md-nav__link">
+      <a href="../../architecture_myths/Myth3_Kubernetes_Networking_Works_Fine_Without_a_CNI_Plugin/" class="md-nav__link">
         
   
   
@@ -566,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Myth4_Control_Plane_Nodes_Don%E2%80%99t_Need_a_Container_Runtime/" class="md-nav__link">
+      <a href="../../architecture_myths/Myth4_Control_Plane_Nodes_Don%E2%80%99t_Need_a_Container_Runtime/" class="md-nav__link">
         
   
   
@@ -946,26 +890,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
@@ -978,7 +927,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Storage Myths
@@ -989,10 +938,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../storage_myths/overview/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1003,6 +974,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#myths" class="md-nav__link">
+    <span class="md-ellipsis">
+      Myths
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1195,16 +1195,43 @@
 
 
 
-<h1 id="kubernetes-architecture-myths-overview">Kubernetes Architecture Myths Overview</h1>
-<p>Kubernetes architecture is often perceived as a black box—with terms like "control plane," "kubelet," and "scheduler" thrown around without deep clarity. This section tackles myths rooted in these components, where surface-level understanding leads to poor design choices and debugging frustrations.</p>
-<p>From misunderstanding how the scheduler works to misattributing responsibilities between components like the kube-apiserver and kubelet, these myths expose critical gaps in architectural knowledge.</p>
-<p>By busting these myths, we aim to deepen your mental model of Kubernetes and help you design more reliable, secure, and efficient clusters.</p>
-<h2 id="subtopics">Subtopics</h2>
+<h1 id="kubernetes-storage-myths-overview">Kubernetes Storage Myths Overview</h1>
+<p>In Kubernetes, compute may steal the spotlight — but persistent storage is what truly powers workloads.</p>
+<p>From databases to logs, caches to backups, storage is a foundational layer that often gets abstracted away, leading to confusion, poor design decisions, and long-term operational pain.</p>
+<p>Unlike traditional VMs or monolithic servers, Kubernetes operates in a dynamic, ephemeral environment:</p>
 <ul>
-<li><a href="../Myth1_Kubelet_is_Exclusive_to_Worker_Nodes/">Myth 1: Kubelet is Exclusive to Worker Nodes</a>  </li>
-<li><a href="../Myth2_Kubernetes_Clusters_Can%27t_Function_Without_Kube-Proxy/">Myth 2: Kubernetes Clusters Can't Function Without Kube-Proxy</a>  </li>
-<li><a href="../Myth3_Kubernetes_Networking_Works_Fine_Without_a_CNI_Plugin/">Myth 3: Kubernetes Networking Works Fine Without a CNI Plugin</a></li>
-<li><a href="../Myth4_Control_Plane_Nodes_Don%E2%80%99t_Need_a_Container_Runtime/">Myth 4: Control Plane Nodes Don’t Need a Container Runtime</a></li>
+<li>
+<p>Pods are rescheduled.</p>
+</li>
+<li>
+<p>Nodes come and go.</p>
+</li>
+<li>
+<p>Volumes need to move with workloads.</p>
+</li>
+</ul>
+<p>This demands storage that’s dynamic, portable, and declarative — but also reliable, consistent, and secure.</p>
+<p>Kubernetes addresses this through:</p>
+<ul>
+<li>
+<p>PersistentVolumes (PV) and PersistentVolumeClaims (PVC)</p>
+</li>
+<li>
+<p>StorageClasses</p>
+</li>
+<li>
+<p>Dynamic provisioning</p>
+</li>
+<li>
+<p>CSI (Container Storage Interface)</p>
+</li>
+</ul>
+<p>But understanding these components is only half the battle. The rest is unlearning the myths.</p>
+<h2 id="myths">Myths</h2>
+<ul>
+<li><a href="Myth1_Kubernetes_Namespaces_Provide_Complete_Isolation.md">Myth 1: K8s Cluster can have only one default Storage Class</a>  </li>
+<li><a href="Myth2_Complete_application_can_be_rolled_back_in_Kubernetes.md">Myth 2: <code>ReadWriteOnce</code> mode allow access to only single Pod</a>  </li>
+<li><a href="Myth3_Kubernetes_automatically_roll_back_failed_deployment.md">Myth 3: Kubernetes automatically roll back failed deployment</a></li>
 </ul>
 
 

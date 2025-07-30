@@ -41,6 +41,10 @@
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
+         <loc>https://kubernetesmyths.com/general_myths/overview/</loc>
+         <lastmod>2025-07-30</lastmod>
+    </url>
+    <url>
          <loc>https://kubernetesmyths.com/networking_myths/Myth1_kube-proxy_assign_IP_address_to_Pods/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
@@ -57,7 +61,15 @@
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
+         <loc>https://kubernetesmyths.com/networking_myths/overview/</loc>
+         <lastmod>2025-07-30</lastmod>
+    </url>
+    <url>
          <loc>https://kubernetesmyths.com/pod_myths/overview/</loc>
+         <lastmod>2025-07-30</lastmod>
+    </url>
+    <url>
+         <loc>https://kubernetesmyths.com/storage_myths/overview/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
@@ -74,6 +86,14 @@
     </url>
     <url>
          <loc>https://kubernetesmyths.com/workload_myths/Myth4_Deployments_Automatically_Roll_Back_on_Failure/</loc>
+         <lastmod>2025-07-30</lastmod>
+    </url>
+    <url>
+         <loc>https://kubernetesmyths.com/workload_myths/Myth5_K8s_Injects_Svc_Info_Into_A_Pods_Env_Var/</loc>
+         <lastmod>2025-07-30</lastmod>
+    </url>
+    <url>
+         <loc>https://kubernetesmyths.com/workload_myths/overview/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
 </urlset>
