@@ -1,13 +1,19 @@
 site_name: Kubernetes Myths
-site_description: A collection of common myths and misconceptions about Kubernetes.
+site_description: Busting common Kubernetes misconceptions with real-world analysis and insights.
 #author: Rajesh Deshpande
 site_author: Rajesh Deshpande
-site_title: Kubernetes Myths; Debunking Common Misconceptions
+#site_title: Kubernetes Myths; Debunking Common Misconceptions
 site_url: https://kubernetesmyths.com
 
 extra:
   favicon: images/favicon.png
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/rajeshdeshpande02/
 
+plugins:
+  - search
+  - meta-descriptions
 
 theme:
   name: material
@@ -17,10 +23,15 @@ theme:
     - navigation.sections
     - navigation.instant
     - toc.integrate
-  custom_dir: overrides
+  custom_dir: docs/overrides
+
+extra_css:
+  - stylesheets/extra.css
+
 
 nav:
   - Home: index.md
+ 
   - Architecture Myths: 
       - Overview: architecture_myths/overview.md
       - Myth 1:Kubelet is Exclusive to Worker Nodes: architecture_myths/Myth1_Kubelet_is_Exclusive_to_Worker_Nodes.md
@@ -29,20 +40,28 @@ nav:
       - Myth 4:Control Plane Nodes Don’t Need a Container Runtime: architecture_myths/Myth4_Control_Plane_Nodes_Don’t_Need_a_Container_Runtime.md
  
   - Networking Myths:
+      - Overview: networking_myths/overview.md
       - Myth 1:kube-proxy assign IP address to Pods: networking_myths/Myth1_kube-proxy_assign_IP_address_to_Pods.md
       - Myth 2:ClusterIP Service is Only for Internal Traffic: networking_myths/Myth2_ClusterIP_Service_is_Only_for_Internal_Traffic.md
-      - Myth 3:ClusterIP Services Always Use Round-Robin Load Balancing: networking_myths/Myth3_ClusterIP_Services_Always_Use_Round-Robin_Load_Balancing.md
+      - Myth 3:ClusterIP Service Always Use Round-Robin Load Balancing: networking_myths/Myth3_ClusterIP_Services_Always_Use_Round-Robin_Load_Balancing.md
       - Myth 4:'kubectl port-forward svc' sends traffic to a service: networking_myths/Myth4_kubectl_port-forward_svc_sends_traffic_to_a_service.md
+
   - Workload Myths:
+      - Overview: workload_myths/overview.md
       - Myth 1:Rolling Updates Are Only Supported by Deployments: workload_myths/Myth1_Rolling_Updates_Are_Only_Supported_by_Deployments.md
       - Myth 2:DaemonSet always schedule pods on all nodes: workload_myths/Myth2_DaemonSet_always_schedule_pods_on_all_nodes.md
       - Myth 3:Deployment Supports All Pod Restart Policies: workload_myths/Myth3_Deployment_Supports_All_Pod_Restart_Policies.md
       - Myth 4:Deployments Automatically Roll Back on Failure: workload_myths/Myth4_Deployments_Automatically_Roll_Back_on_Failure.md
+      - Myth 5:K8s always injects information about Services into a Pods: workload_myths/Myth5_K8s_Injects_Svc_Info_Into_A_Pods_Env_Var.md
   #- Pod Myths:
   #    - Overview: pod_myths/overview.md
+  - Storage Myths:
+      - Overview: storage_myths/overview.md
   - General Myths:
+      - Overview: general_myths/overview.md
       - Myth 1:Kubernetes Namespaces Provide Complete Isolation: general_myths/Myth1_Kubernetes_Namespaces_Provide_Complete_Isolation.md
       - Myth 2:Complete application can be rolled back in Kubernetes: general_myths/Myth2_Complete_application_can_be_rolled_back_in_Kubernetes.md
       - Myth 3:Kubernetes automatically roll back failed deployment: general_myths/Myth3_Kubernetes_automatically_roll_back_failed_deployment.md
-      
+
+  - Author: about.md
   #- About: about.md

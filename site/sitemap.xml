@@ -2,78 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://kubernetesmyths.com/</loc>
-         <lastmod>2025-04-06</lastmod>
+         <lastmod>2025-07-30</lastmod>
     </url>
     <url>
          <loc>https://kubernetesmyths.com/about/</loc>
-         <lastmod>2025-04-06</lastmod>
+         <lastmod>2025-07-30</lastmod>
     </url>
     <url>
          <loc>https://kubernetesmyths.com/architecture_myths/Myth1_Kubelet_is_Exclusive_to_Worker_Nodes/</loc>
-         <lastmod>2025-04-06</lastmod>
+         <lastmod>2025-07-30</lastmod>
     </url>
     <url>
          <loc>https://kubernetesmyths.com/architecture_myths/Myth2_Kubernetes_Clusters_Can%27t_Function_Without_Kube-Proxy/</loc>
-         <lastmod>2025-04-06</lastmod>
+         <lastmod>2025-07-30</lastmod>
     </url>
     <url>
          <loc>https://kubernetesmyths.com/architecture_myths/Myth3_Kubernetes_Networking_Works_Fine_Without_a_CNI_Plugin/</loc>
-         <lastmod>2025-04-06</lastmod>
+         <lastmod>2025-07-30</lastmod>
     </url>
     <url>
          <loc>https://kubernetesmyths.com/architecture_myths/Myth4_Control_Plane_Nodes_Don%E2%80%99t_Need_a_Container_Runtime/</loc>
-         <lastmod>2025-04-06</lastmod>
+         <lastmod>2025-07-30</lastmod>
     </url>
     <url>
          <loc>https://kubernetesmyths.com/architecture_myths/overview/</loc>
-         <lastmod>2025-04-06</lastmod>
+         <lastmod>2025-07-30</lastmod>
     </url>
     <url>
          <loc>https://kubernetesmyths.com/general_myths/Myth1_Kubernetes_Namespaces_Provide_Complete_Isolation/</loc>
-         <lastmod>2025-04-06</lastmod>
+         <lastmod>2025-07-30</lastmod>
     </url>
     <url>
          <loc>https://kubernetesmyths.com/general_myths/Myth2_Complete_application_can_be_rolled_back_in_Kubernetes/</loc>
-         <lastmod>2025-04-06</lastmod>
+         <lastmod>2025-07-30</lastmod>
     </url>
     <url>
          <loc>https://kubernetesmyths.com/general_myths/Myth3_Kubernetes_automatically_roll_back_failed_deployment/</loc>
-         <lastmod>2025-04-06</lastmod>
+         <lastmod>2025-07-30</lastmod>
     </url>
     <url>
          <loc>https://kubernetesmyths.com/networking_myths/Myth1_kube-proxy_assign_IP_address_to_Pods/</loc>
-         <lastmod>2025-04-06</lastmod>
+         <lastmod>2025-07-30</lastmod>
     </url>
     <url>
          <loc>https://kubernetesmyths.com/networking_myths/Myth2_ClusterIP_Service_is_Only_for_Internal_Traffic/</loc>
-         <lastmod>2025-04-06</lastmod>
+         <lastmod>2025-07-30</lastmod>
     </url>
     <url>
          <loc>https://kubernetesmyths.com/networking_myths/Myth3_ClusterIP_Services_Always_Use_Round-Robin_Load_Balancing/</loc>
-         <lastmod>2025-04-06</lastmod>
+         <lastmod>2025-07-30</lastmod>
     </url>
     <url>
          <loc>https://kubernetesmyths.com/networking_myths/Myth4_kubectl_port-forward_svc_sends_traffic_to_a_service/</loc>
-         <lastmod>2025-04-06</lastmod>
+         <lastmod>2025-07-30</lastmod>
     </url>
     <url>
          <loc>https://kubernetesmyths.com/pod_myths/overview/</loc>
-         <lastmod>2025-04-06</lastmod>
+         <lastmod>2025-07-30</lastmod>
     </url>
     <url>
          <loc>https://kubernetesmyths.com/workload_myths/Myth1_Rolling_Updates_Are_Only_Supported_by_Deployments/</loc>
-         <lastmod>2025-04-06</lastmod>
+         <lastmod>2025-07-30</lastmod>
     </url>
     <url>
          <loc>https://kubernetesmyths.com/workload_myths/Myth2_DaemonSet_always_schedule_pods_on_all_nodes/</loc>
-         <lastmod>2025-04-06</lastmod>
+         <lastmod>2025-07-30</lastmod>
     </url>
     <url>
          <loc>https://kubernetesmyths.com/workload_myths/Myth3_Deployment_Supports_All_Pod_Restart_Policies/</loc>
-         <lastmod>2025-04-06</lastmod>
+         <lastmod>2025-07-30</lastmod>
     </url>
     <url>
          <loc>https://kubernetesmyths.com/workload_myths/Myth4_Deployments_Automatically_Roll_Back_on_Failure/</loc>
-         <lastmod>2025-04-06</lastmod>
+         <lastmod>2025-07-30</lastmod>
     </url>
 </urlset>

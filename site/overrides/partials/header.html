@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block header %}
+  {{ super() }}
+
+  <style>
+    .custom-author-link {
+      margin-left: 1rem;
+      font-size: 0.9rem;
+      color: var(--md-default-fg-color);
+      text-decoration: none;
+    }
+    .custom-author-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      const searchBox = document.querySelector(".md-header__option");
+      if (searchBox) {
+        const link = document.createElement("a");
+        link.href = "/about/";
+        link.innerText = "Author";
+        link.className = "custom-author-link";
+        link.target = "_self";
+        searchBox.parentNode.insertBefore(link, searchBox.nextSibling);
+      }
+    });
+  </script>
+{% endblock %}
