@@ -57,6 +57,7 @@ nav:
   #    - Overview: pod_myths/overview.md
   - Storage Myths:
       - Overview: storage_myths/overview.md
+      - Myth 1:Kubernetes Cluster Can Have Only One Default StorageClass: storage_myths\Myth1_Kubernetes_Cluster_Can_Have_Only_One_Default_StorageClass.md
   - General Myths:
       - Overview: general_myths/overview.md
       - Myth 1:Kubernetes Namespaces Provide Complete Isolation: general_myths/Myth1_Kubernetes_Namespaces_Provide_Complete_Isolation.md

@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="A collection of common myths and misconceptions about Kubernetes.">
+        <meta name="description" content="Hi, I’m Rajesh Deshpande — a seasoned DevOps and Platform Engineer with 13+ years of hands-on experience in Kubernetes, Golang, Cloud-Native architecture, and Developer Experience (DevEx).">
       
       
         <meta name="author" content="Rajesh Deshpande">
@@ -15,6 +15,8 @@
         <link rel="canonical" href="https://kubernetesmyths.com/about/">
       
       
+        <link rel="prev" href="../general_myths/Myth3_Kubernetes_automatically_roll_back_failed_deployment/">
+      
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +24,7 @@
     
     
       
-        <title>About - Kubernetes Myths</title>
+        <title>Author - Kubernetes Myths</title>
       
     
     
@@ -45,6 +47,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -64,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#about" class="md-skip">
+        <a href="#about-the-author" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              About
+              Author
             
           </span>
         </div>
@@ -212,7 +216,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../networking_myths/Myth1_kube-proxy_assign_IP_address_to_Pods/" class="md-tabs__link">
+        <a href="../networking_myths/overview/" class="md-tabs__link">
           
   
   
@@ -232,7 +236,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../workload_myths/Myth1_Rolling_Updates_Are_Only_Supported_by_Deployments/" class="md-tabs__link">
+        <a href="../workload_myths/overview/" class="md-tabs__link">
           
   
   
@@ -252,7 +256,27 @@
     
     
       <li class="md-tabs__item">
-        <a href="../general_myths/Myth1_Kubernetes_Namespaces_Provide_Complete_Isolation/" class="md-tabs__link">
+        <a href="../storage_myths/overview/" class="md-tabs__link">
+          
+  
+  
+  Storage Myths
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../general_myths/overview/" class="md-tabs__link">
           
   
   
@@ -261,6 +285,27 @@
         </a>
       </li>
     
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Author
+
+      </a>
+    </li>
   
 
       
@@ -536,6 +581,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../networking_myths/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../networking_myths/Myth1_kube-proxy_assign_IP_address_to_Pods/" class="md-nav__link">
         
   
@@ -587,7 +655,7 @@
   
   
   <span class="md-ellipsis">
-    Myth 3:ClusterIP Services Always Use Round-Robin Load Balancing
+    Myth 3:ClusterIP Service Always Use Round-Robin Load Balancing
     
   </span>
   
@@ -670,6 +738,29 @@
             Workload Myths
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workload_myths/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -763,6 +854,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workload_myths/Myth5_K8s_Injects_Svc_Info_Into_A_Pods_Env_Var/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Myth 5:K8s always injects information about Services into a Pods
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -798,7 +912,7 @@
   
   
   <span class="md-ellipsis">
-    General Myths
+    Storage Myths
     
   </span>
   
@@ -809,9 +923,105 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
+            Storage Myths
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../storage_myths/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    General Myths
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
             General Myths
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../general_myths/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -889,6 +1099,106 @@
   
 
     
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Author
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Author
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-i-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 What I Do
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#work-highlights" class="md-nav__link">
+    <span class="md-ellipsis">
+      💼 Work Highlights
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presence" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 Presence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-to-opportunities" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Open to Opportunities
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -905,14 +1215,61 @@
 
 
 
-<h1 id="about">About</h1>
-<p>Hi, I'm <strong>Rajesh Deshpande</strong> — a cloud-native engineer passionate about Kubernetes, Golang, and platform engineering. With over 13 years of experience in software engineering, I created KubernetesMyths.com to bust misconceptions and share deep, code-level insights.</p>
+<h1 id="about-the-author">👋 About the Author</h1>
+<p>Hi, I’m <strong>Rajesh Deshpande</strong> — a seasoned DevOps and Platform Engineer with <strong>13+ years</strong> of hands-on experience in <strong>Kubernetes, Golang, Cloud-Native architecture, and Developer Experience (DevEx)</strong>.</p>
+<hr />
+<h2 id="what-i-do">🎯 What I Do</h2>
+<ul>
+<li>I specialize in building <strong>secure, scalable platforms</strong> using:</li>
+<li>🐳 Kubernetes</li>
+<li>🛠️ Golang (Platform tools, Operators, GitOps automation)</li>
+<li>🔐 DevSecOps and Zero Trust implementation</li>
+<li>⚙️ Platform Engineering for developer productivity</li>
+<li>Personal Projects:<ul>
+<li>Creator of <strong><a href="https://kubernetesmyths.com/">KubernetesMyths.com</a></strong> — an open knowledge project that debunks Kubernetes myths with real-world experiments and source-code-level analysis.</li>
+<li>Designed and Developed <strong><a href="https://go.techxper.in/">GoXper</a></strong> - a Golang-based automation tool that scaffolds secure, production-ready microservices with CI/CD, Kubernetes, and SBOM integration — accelerating platform delivery by 10x.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="work-highlights">💼 Work Highlights</h2>
+<ul>
+<li>Enabled 10x faster Kubernetes adoption by delivering a scalable, GitOps-driven Orchestrator platform which used to provision 1500+ clusters via self-service and secure automation.</li>
+<li>Built a self-service Cloud-Native Developer Platform, cutting development time by 80% and infra/tooling costs by 25%.</li>
+<li>Standardized infra provisioning across the org via a scalable Terraform IaC platform with 100+ reusable modules.</li>
+<li>Engineered a Jenkins Shared Library framework that powered thousands of pipelines, accelerating deployment velocity and audit compliance</li>
+<li>Built a secure image lifecycle platform for base images, Jenkins agents, and external artifacts, enabling image signing, vulnerability scanning, and trusted Helm chart acquisition across the organization.</li>
+<li>Enabled business continuity and operational resilience by helping teams design HA, scalable, cloud-native systems with built-in disaster recovery across clouds.</li>
+<li>Enabled distributed observability and service mesh integration, improving diagnostics, performance monitoring, and cross-service policy governance</li>
+</ul>
+<hr />
+<h2 id="presence">📘 Presence</h2>
+<ul>
+<li>💻 GitHub: <a href="https://github.com/rajeshd2091">rajeshd2091</a></li>
+<li>🧵 LinkedIn: <a href="https://linkedin.com/in/rajeshdeshpande02">linkedin.com/in/rajeshdeshpande02</a></li>
+</ul>
+<hr />
+<h2 id="open-to-opportunities">🚀 Open to Opportunities</h2>
+<p>I’m open to:</p>
+<ul>
+<li>🔧 Senior Platform Engineering / DevOps roles</li>
+<li>🧠 Consulting on Kubernetes, Platform, or Supply Chain Security</li>
+<li>📦 Building internal developer platforms</li>
+</ul>
+<p>📨 <a href="https://www.linkedin.com/in/rajesh-deshpande-1058b9151/">Let’s connect on LinkedIn</a> or reach me directly at <strong>rajeshd2090@gmail.com</strong></p>
+<hr />
+<blockquote>
+<p>“Tools come and go, but platform thinking, clarity, and curiosity scale forever.”</p>
+</blockquote>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -929,7 +1286,29 @@
         
       </main>
       
-
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 1.5em 0; font-size: 0.9em; color: #666;">
+    <div style="margin-bottom: 0.5em;">
+      <strong>Rajesh Deshpande</strong> &nbsp;·&nbsp;
+  
+      <a href="https://www.linkedin.com/in/rajesh-deshpande-1058b9151/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #0077b5; margin-right: 10px;">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="18" style="vertical-align: text-bottom; margin-right: 4px;">
+        LinkedIn
+      </a>
+  
+      <a href="https://github.com/rajeshdeshpande02" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" width="18" style="vertical-align: text-bottom; margin-right: 4px;">
+        GitHub
+      </a>
+      <div style="text-align: center;">
+        <h3>Visitor Count:
+        <img src="https://hitwebcounter.com/counter/counter.php?page=20281476&style=0011&nbdigits=6&type=page&initCount=100" title="Counter Widget" Alt="Visit counter For Websites"   border="0" />
+        </h3>
+    </div>
+    </div>
+  
+  
+  </div>
+      
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
