@@ -26,6 +26,7 @@ jobs:
           pip install mkdocs
           pip install mkdocs-material   # If using Material theme
           pip install mkdocs-awesome-pages-plugin || true
+          pip install mkdocs-meta-descriptions-plugin
 
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force
