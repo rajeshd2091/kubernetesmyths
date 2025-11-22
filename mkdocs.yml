@@ -3,7 +3,7 @@ site_description: Busting common Kubernetes misconceptions with real-world analy
 #author: Rajesh Deshpande
 site_author: Rajesh Deshpande
 #site_title: Kubernetes Myths; Debunking Common Misconceptions
-site_url: kubernetesmyths.com
+site_url: https://kubernetesmyths.com
 
 extra:
   homepage: https://kubernetesmyths.com
