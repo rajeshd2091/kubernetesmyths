@@ -13,7 +13,6 @@ Hi, I’m **Rajesh Deshpande** — a seasoned DevOps and Platform Engineer with 
   - ⚙️ Platform Engineering for developer productivity
   - Personal Projects:
     - Creator of **[KubernetesMyths.com](https://kubernetesmyths.com/)** — an open knowledge project that debunks Kubernetes myths with real-world experiments and source-code-level analysis.
-    - Designed and Developed **[GoXper](https://go.techxper.in/)** - a Golang-based automation tool that scaffolds secure, production-ready microservices with CI/CD, Kubernetes, and SBOM integration — accelerating platform delivery by 10x.
 
 ---
 
