@@ -33,7 +33,7 @@ And you see two or more default classes marked "true".
 - It's up to cluster admins to ensure only one default exists for consistent PVC provisioning.
 
 ### Experiment & Validate
-Step1: Create Two Default StorageClasses
+**Step 1: Create Two Default StorageClasses**
 
 ```yaml
 apiVersion: storage.k8s.io/v1
@@ -52,11 +52,11 @@ metadata:
     storageclass.kubernetes.io/is-default-class: "true"
 provisioner: kubernetes.io/no-provisioner
 ```
-Step 2: Apply
+**Step 2: Apply**
 ```sh
 kubectl apply -f dual-default-sc.yaml
 ```
-Step 3: List All Defaults
+**Step 3: List All Defaults**
 ```sh
 kubectl get sc -o custom-columns=NAME:.metadata.name,DEFAULT:.metadata.annotations.storageclass\.kubernetes\.io/is-default-class
 ```
