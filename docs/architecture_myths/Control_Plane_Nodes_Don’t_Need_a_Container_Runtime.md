@@ -1,4 +1,4 @@
-# Myth 4: Control Plane Nodes Don’t Need a Container Runtime
+# **Myth:  Control Plane Nodes Don’t Need a Container Runtime**
 You set up your control plane node, confident that everything is configured correctly. Next, you run `kubeadm init`, expecting a smooth setup—but it fails instantly!
 
 The error? `no container runtime detected.`

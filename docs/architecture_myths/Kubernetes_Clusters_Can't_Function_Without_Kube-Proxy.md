@@ -1,4 +1,4 @@
-# Myth 2: Kubernetes Clusters Can't Function Without Kube-Proxy
+# **Myth: Kubernetes Clusters Can't Function Without Kube-Proxy**
 You deploy a Kubernetes cluster and start checking the usual system components. API server? Running. Controller manager? Running. Kube-Proxy? Wait… it's missing! You double-check the namespace, logs, and even the deployment—nothing. But surprisingly, your pods and services are still communicating just fine. How is this possible? Isn't Kube-Proxy essential for cluster networking?
 
 ### Why This Myth Exists?

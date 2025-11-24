@@ -1,4 +1,4 @@
-# Kubernetes Workload Myths Overview
+# Kubernetes Workload Myths
 
 Deploying workloads in Kubernetes may seem straightforward—but lurking underneath are subtle behaviors that often surprise even experienced engineers.
 
@@ -6,10 +6,15 @@ This section dives into common misconceptions around Pods, Deployments, Stateful
 
 By exposing these myths, we help you design resilient, predictable workloads that behave as intended under real-world pressure.
 
-## Subtopics
+## Myths
 
-- [Myth 1: Rolling Updates Are Only Supported by Deployments](Myth1_Rolling_Updates_Are_Only_Supported_by_Deployments.md)  
-- [Myth 2: DaemonSet always schedule pods on all nodes](Myth2_DaemonSet_always_schedule_pods_on_all_nodes.md)  
-- [Myth 3: Deployment Supports All Pod Restart Policies](Myth3_Deployment_Supports_All_Pod_Restart_Policies.md)
-- [Myth 4: Deployment Automatically Roll Back on Failure](Myth4_Deployments_Automatically_Roll_Back_on_Failure.md)
-- [Myth 5: Kubernetes always injects information about Services into a Pod](Myth5_K8s_Injects_Svc_Info_Into_A_Pods_Env_Var.md) 
+- [Rolling Updates Are Only Supported by Deployments](Rolling_Updates_Are_Only_Supported_by_Deployments.md)  
+- [DaemonSet always schedule pods on all nodes](DaemonSet_always_schedule_pods_on_all_nodes.md)  
+- [Deployment Supports All Pod Restart Policies](Deployment_Supports_All_Pod_Restart_Policies.md)
+- [Kubernetes automatically roll back failed Deployment](Kubernetes_automatically_roll_back_failed_deployment.md)
+- [Kubernetes always injects information about Services into a Pod](K8s_Injects_Svc_Info_Into_A_Pods_Env_Var.md) 
+- All Pods are created through the API server
+- Every Kubernetes Pod must have a ServiceAccount assigned
+- Init containers can run in any sequence or even in parallel
+- Deployments directly create and manage Pods
+- Kubernetes automatically deletes older ReplicaSets created by Deployments

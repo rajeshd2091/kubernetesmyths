@@ -1,4 +1,4 @@
-# Myth 4: 'kubectl port-forward svc' sends traffic to a service
+# Myth: 'kubectl port-forward svc' sends traffic to a service
 Many engineers assume that running:
 ```
 kubectl port-forward svc/my-service 8080:80

@@ -1,4 +1,4 @@
-# Myth 2: `ReadWriteOnce` mode allows only a single Pod to access the volume
+# Myth: `ReadWriteOnce` mode allows only a single Pod to access the volume
 
 During one of my interviews, the panel asked me, “Why does Kubernetes restrict RWO volumes to a single Pod?”
 I confidently answered, “Because only one Pod can mount it — that’s what RWO means.”

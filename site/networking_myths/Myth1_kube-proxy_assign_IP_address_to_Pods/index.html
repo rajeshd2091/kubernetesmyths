@@ -12,13 +12,13 @@
         <meta name="author" content="Rajesh Deshpande">
       
       
-        <link rel="canonical" href="https://kubernetesmyths.com/networking_myths/Myth1_kube-proxy_assign_IP_address_to_Pods/">
+        <link rel="canonical" href="https://kubernetesmyths.com/networking_myths/kube-proxy_assign_IP_address_to_Pods/">
       
       
         <link rel="prev" href="../overview/">
       
       
-        <link rel="next" href="../Myth2_ClusterIP_Service_is_Only_for_Internal_Traffic/">
+        <link rel="next" href="../ClusterIP_Service_is_Only_for_Internal_Traffic/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -441,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture_myths/Myth1_Kubelet_is_Exclusive_to_Worker_Nodes/" class="md-nav__link">
+      <a href="../../architecture_myths/Kubelet_is_Exclusive_to_Worker_Nodes/" class="md-nav__link">
         
   
   
@@ -464,7 +464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture_myths/Myth2_Kubernetes_Clusters_Can%27t_Function_Without_Kube-Proxy/" class="md-nav__link">
+      <a href="../../architecture_myths/Kubernetes_Clusters_Can%27t_Function_Without_Kube-Proxy/" class="md-nav__link">
         
   
   
@@ -487,7 +487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture_myths/Myth3_Kubernetes_Networking_Works_Fine_Without_a_CNI_Plugin/" class="md-nav__link">
+      <a href="../../architecture_myths/Kubernetes_Networking_Works_Fine_Without_a_CNI_Plugin/" class="md-nav__link">
         
   
   
@@ -510,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture_myths/Myth4_Control_Plane_Nodes_Don%E2%80%99t_Need_a_Container_Runtime/" class="md-nav__link">
+      <a href="../../architecture_myths/Control_Plane_Nodes_Don%E2%80%99t_Need_a_Container_Runtime/" class="md-nav__link">
         
   
   
@@ -712,7 +712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Myth2_ClusterIP_Service_is_Only_for_Internal_Traffic/" class="md-nav__link">
+      <a href="../ClusterIP_Service_is_Only_for_Internal_Traffic/" class="md-nav__link">
         
   
   
@@ -735,7 +735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Myth3_ClusterIP_Services_Always_Use_Round-Robin_Load_Balancing/" class="md-nav__link">
+      <a href="../ClusterIP_Services_Always_Use_Round-Robin_Load_Balancing/" class="md-nav__link">
         
   
   
@@ -758,7 +758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Myth4_kubectl_port-forward_svc_sends_traffic_to_a_service/" class="md-nav__link">
+      <a href="../kubectl_port-forward_svc_sends_traffic_to_a_service/" class="md-nav__link">
         
   
   
@@ -854,7 +854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../workload_myths/Myth1_Rolling_Updates_Are_Only_Supported_by_Deployments/" class="md-nav__link">
+      <a href="../../workload_myths/Rolling_Updates_Are_Only_Supported_by_Deployments/" class="md-nav__link">
         
   
   
@@ -877,7 +877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../workload_myths/Myth2_DaemonSet_always_schedule_pods_on_all_nodes/" class="md-nav__link">
+      <a href="../../workload_myths/DaemonSet_always_schedule_pods_on_all_nodes/" class="md-nav__link">
         
   
   
@@ -900,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../workload_myths/Myth3_Deployment_Supports_All_Pod_Restart_Policies/" class="md-nav__link">
+      <a href="../../workload_myths/Deployment_Supports_All_Pod_Restart_Policies/" class="md-nav__link">
         
   
   
@@ -923,7 +923,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../workload_myths/Myth4_Deployments_Automatically_Roll_Back_on_Failure/" class="md-nav__link">
+      <a href="../../workload_myths/Deployments_Automatically_Roll_Back_on_Failure/" class="md-nav__link">
         
   
   
@@ -1115,7 +1115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../general_myths/Myth1_Kubernetes_Namespaces_Provide_Complete_Isolation/" class="md-nav__link">
+      <a href="../../general_myths/Kubernetes_Namespaces_Provide_Complete_Isolation/" class="md-nav__link">
         
   
   
@@ -1138,7 +1138,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../general_myths/Myth2_Complete_application_can_be_rolled_back_in_Kubernetes/" class="md-nav__link">
+      <a href="../../general_myths/Complete_application_can_be_rolled_back_in_Kubernetes/" class="md-nav__link">
         
   
   
@@ -1161,7 +1161,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../general_myths/Myth3_Kubernetes_automatically_roll_back_failed_deployment/" class="md-nav__link">
+      <a href="../../general_myths/Kubernetes_automatically_roll_back_failed_deployment/" class="md-nav__link">
         
   
   
@@ -1222,7 +1222,7 @@
 
 
 
-<h1 id="myth-1-kube-proxy-assign-ip-address-to-pods">Myth 1: kube-proxy assign IP address to Pods</h1>
+<h1 id="myth-1-kube-proxy-assign-ip-address-to-pods">kube-proxy assign IP address to Pods</h1>
 <p>A common belief among Kubernetes users is that kube-proxy is responsible for assigning IP addresses to pods. After all, it manages networking rules and enables communication between services—so it must be the component handling pod IPs, right?</p>
 <h3 id="why-does-this-myth-exist">Why Does This Myth Exist?</h3>
 <ol>

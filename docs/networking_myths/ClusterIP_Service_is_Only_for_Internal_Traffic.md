@@ -1,4 +1,4 @@
-# Myth 2: ClusterIP Service is Only for Internal Traffic
+# Myth: ClusterIP Service is Only for Internal Traffic
 You’ve just configured a ClusterIP service to expose one of your pods internally in your Kubernetes cluster. It seems like a straightforward setup—after all, ClusterIP services are meant to route traffic between pods within the cluster, right? So, you assume that it’s all about internal communication.
 
 But then, you decide to test it a bit more. You try accessing the service using a curl command from a different pod within the same cluster and… it works perfectly. That’s expected, right? You start thinking that ClusterIP is only for internal use. But curiosity leads you to try something else—accessing the service from outside the cluster.

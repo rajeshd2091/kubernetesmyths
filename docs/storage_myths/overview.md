@@ -1,4 +1,4 @@
-# Kubernetes Storage Myths Overview
+# Kubernetes Storage Myths
 
 In Kubernetes, compute may steal the spotlight — but persistent storage is what truly powers workloads.
 
@@ -29,5 +29,5 @@ But understanding these components is only half the battle. The rest is unlearni
 
 ## Myths
 
-- [Myth 1: K8s Cluster can have only one default Storage Class](Myth1_Kubernetes_Cluster_Can_Have_Only_One_Default_StorageClass.md)  
-- [Myth 2: `ReadWriteOnce` mode allows only a single Pod to access the volume](Myth2_ReadWriteOnce_mode_allows_only_a_single_Pod_to_access_the_volume.md)
+- [K8s Cluster can have only one default Storage Class](Kubernetes_Cluster_Can_Have_Only_One_Default_StorageClass.md)  
+- [`ReadWriteOnce` mode allows only a single Pod to access the volume](ReadWriteOnce_mode_allows_only_a_single_Pod_to_access_the_volume.md)

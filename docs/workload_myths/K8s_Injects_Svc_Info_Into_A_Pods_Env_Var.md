@@ -1,4 +1,4 @@
-# Myth 4: Kubernetes always injects information about Services into a Pod
+# Myth: Kubernetes always injects information about Services into a Pod
 
 I was attending a free Kubernetes webinar where the speaker was walking through service discovery patterns.
 At one point, he confidently said:

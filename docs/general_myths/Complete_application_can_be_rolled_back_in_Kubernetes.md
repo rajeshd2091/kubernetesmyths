@@ -1,4 +1,4 @@
-# Myth 2: Complete application can be rolled back in Kubernetes
+# Myth: Complete application can be rolled back in Kubernetes
 A team deployed a new version of their microservices-based application in Kubernetes. Soon after, they noticed critical issues and decided to roll back using:
 ```
 kubectl rollout undo deployment my-app

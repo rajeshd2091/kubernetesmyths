@@ -1,4 +1,4 @@
-# Myth 1: Kubernetes Namespaces Provide Complete Isolation
+# Myth: Kubernetes Namespaces Provide Complete Isolation
 Many teams assume that creating separate namespaces guarantees strong isolation between workloads, preventing them from affecting each other. But this belief can lead to critical security oversights.
 
 A developer once confidently deployed production and staging workloads in separate namespaces on the same cluster, believing they were fully isolated. Later, a misconfigured role binding allowed an engineer to access production resources from the staging namespace—resulting in an unintended outage.

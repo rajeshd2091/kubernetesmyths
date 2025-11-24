@@ -1,4 +1,4 @@
-# Myth 1: Kubernetes Cluster Can Have Only One Default StorageClass
+# Myth: Kubernetes Cluster Can Have Only One Default StorageClass
 
 You're defining a new StorageClass and set:
 ```yaml

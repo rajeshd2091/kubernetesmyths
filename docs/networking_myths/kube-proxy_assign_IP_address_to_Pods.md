@@ -1,4 +1,4 @@
-# Myth 1: kube-proxy assign IP address to Pods
+# Myth: kube-proxy assign IP address to Pods
 A common belief among Kubernetes users is that kube-proxy is responsible for assigning IP addresses to pods. After all, it manages networking rules and enables communication between services—so it must be the component handling pod IPs, right?
 
 ### Why Does This Myth Exist?

@@ -1,4 +1,4 @@
-# Myth 1: Kubelet is Exclusive to Worker Nodes
+# **Myth: Kubelet is Exclusive to Worker Nodes**
 
 
 You SSH into a control plane node, expecting to see only control plane components like the API server, controller manager, and scheduler running. But wait—why is Kubelet there? Wasn't it supposed to run only on worker nodes?

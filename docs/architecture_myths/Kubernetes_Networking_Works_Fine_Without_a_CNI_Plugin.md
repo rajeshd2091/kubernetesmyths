@@ -1,4 +1,4 @@
-# Myth 3: Kubernetes Networking Works Fine Without a CNI Plugin
+# **Myth: Kubernetes Networking Works Fine Without a CNI Plugin**
 
 You set up a Production Kubernetes cluster, deploy some pods, and… nothing. They can't talk to each other, You search Stack Overflow, try restarting pods, but nothing works, Finally, you realize networking is broken, and some pods are stuck in "ContainerCreating" state. You check the logs and see:
 ```sh

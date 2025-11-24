@@ -1,4 +1,4 @@
-# Myth 2: DaemonSet always schedule pods on all nodes.
+# Myth: DaemonSet always schedule pods on all nodes.
 Expect DaemonSet to Run on Every Node? Not So Fast! Many assume that a DaemonSet automatically schedules a Pod on every node in the cluster. While this is generally true, there are several cases where DaemonSet does not schedule Pods on all nodes.
 
 ### Why This Myth Exists?

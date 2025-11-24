@@ -12,13 +12,13 @@
         <meta name="author" content="Rajesh Deshpande">
       
       
-        <link rel="canonical" href="https://kubernetesmyths.com/architecture_myths/Myth3_Kubernetes_Networking_Works_Fine_Without_a_CNI_Plugin/">
+        <link rel="canonical" href="https://kubernetesmyths.com/architecture_myths/Kubernetes_Networking_Works_Fine_Without_a_CNI_Plugin/">
       
       
-        <link rel="prev" href="../Myth2_Kubernetes_Clusters_Can%27t_Function_Without_Kube-Proxy/">
+        <link rel="prev" href="../Kubernetes_Clusters_Can%27t_Function_Without_Kube-Proxy/">
       
       
-        <link rel="next" href="../Myth4_Control_Plane_Nodes_Don%E2%80%99t_Need_a_Container_Runtime/">
+        <link rel="next" href="../Control_Plane_Nodes_Don%E2%80%99t_Need_a_Container_Runtime/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -446,7 +446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Myth1_Kubelet_is_Exclusive_to_Worker_Nodes/" class="md-nav__link">
+      <a href="../Kubelet_is_Exclusive_to_Worker_Nodes/" class="md-nav__link">
         
   
   
@@ -469,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Myth2_Kubernetes_Clusters_Can%27t_Function_Without_Kube-Proxy/" class="md-nav__link">
+      <a href="../Kubernetes_Clusters_Can%27t_Function_Without_Kube-Proxy/" class="md-nav__link">
         
   
   
@@ -593,7 +593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Myth4_Control_Plane_Nodes_Don%E2%80%99t_Need_a_Container_Runtime/" class="md-nav__link">
+      <a href="../Control_Plane_Nodes_Don%E2%80%99t_Need_a_Container_Runtime/" class="md-nav__link">
         
   
   
@@ -689,7 +689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../networking_myths/Myth1_kube-proxy_assign_IP_address_to_Pods/" class="md-nav__link">
+      <a href="../../networking_myths/kube-proxy_assign_IP_address_to_Pods/" class="md-nav__link">
         
   
   
@@ -712,7 +712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../networking_myths/Myth2_ClusterIP_Service_is_Only_for_Internal_Traffic/" class="md-nav__link">
+      <a href="../../networking_myths/ClusterIP_Service_is_Only_for_Internal_Traffic/" class="md-nav__link">
         
   
   
@@ -735,7 +735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../networking_myths/Myth3_ClusterIP_Services_Always_Use_Round-Robin_Load_Balancing/" class="md-nav__link">
+      <a href="../../networking_myths/ClusterIP_Services_Always_Use_Round-Robin_Load_Balancing/" class="md-nav__link">
         
   
   
@@ -758,7 +758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../networking_myths/Myth4_kubectl_port-forward_svc_sends_traffic_to_a_service/" class="md-nav__link">
+      <a href="../../networking_myths/kubectl_port-forward_svc_sends_traffic_to_a_service/" class="md-nav__link">
         
   
   
@@ -854,7 +854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../workload_myths/Myth1_Rolling_Updates_Are_Only_Supported_by_Deployments/" class="md-nav__link">
+      <a href="../../workload_myths/Rolling_Updates_Are_Only_Supported_by_Deployments/" class="md-nav__link">
         
   
   
@@ -877,7 +877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../workload_myths/Myth2_DaemonSet_always_schedule_pods_on_all_nodes/" class="md-nav__link">
+      <a href="../../workload_myths/DaemonSet_always_schedule_pods_on_all_nodes/" class="md-nav__link">
         
   
   
@@ -900,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../workload_myths/Myth3_Deployment_Supports_All_Pod_Restart_Policies/" class="md-nav__link">
+      <a href="../../workload_myths/Deployment_Supports_All_Pod_Restart_Policies/" class="md-nav__link">
         
   
   
@@ -923,7 +923,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../workload_myths/Myth4_Deployments_Automatically_Roll_Back_on_Failure/" class="md-nav__link">
+      <a href="../../workload_myths/Deployments_Automatically_Roll_Back_on_Failure/" class="md-nav__link">
         
   
   
@@ -1115,7 +1115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../general_myths/Myth1_Kubernetes_Namespaces_Provide_Complete_Isolation/" class="md-nav__link">
+      <a href="../../general_myths/Kubernetes_Namespaces_Provide_Complete_Isolation/" class="md-nav__link">
         
   
   
@@ -1138,7 +1138,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../general_myths/Myth2_Complete_application_can_be_rolled_back_in_Kubernetes/" class="md-nav__link">
+      <a href="../../general_myths/Complete_application_can_be_rolled_back_in_Kubernetes/" class="md-nav__link">
         
   
   
@@ -1161,7 +1161,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../general_myths/Myth3_Kubernetes_automatically_roll_back_failed_deployment/" class="md-nav__link">
+      <a href="../../general_myths/Kubernetes_automatically_roll_back_failed_deployment/" class="md-nav__link">
         
   
   
@@ -1222,7 +1222,7 @@
 
 
 
-<h1 id="myth-3-kubernetes-networking-works-fine-without-a-cni-plugin">Myth 3: Kubernetes Networking Works Fine Without a CNI Plugin</h1>
+<h1 id="myth-3-kubernetes-networking-works-fine-without-a-cni-plugin">Kubernetes Networking Works Fine Without a CNI Plugin</h1>
 <p>You set up a Production Kubernetes cluster, deploy some pods, and… nothing. They can't talk to each other, You search Stack Overflow, try restarting pods, but nothing works, Finally, you realize networking is broken, and some pods are stuck in "ContainerCreating" state. You check the logs and see:</p>
 <pre><code class="language-sh">NetworkPluginNotReady: CNI plugin not initialized
 </code></pre>

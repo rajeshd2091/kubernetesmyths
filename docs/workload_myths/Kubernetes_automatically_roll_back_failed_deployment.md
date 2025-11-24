@@ -1,4 +1,4 @@
-# Myth 3: Kubernetes automatically roll back failed deployment
+# Myth: Kubernetes automatically roll back failed Deployment
 A team deployed a new version of their application, expecting Kubernetes to roll it back automatically if something went wrong. Unfortunately, the deployment failed, but instead of rolling back, Kubernetes left it in a bad state. The team was surprised—wasn't Kubernetes supposed to handle this automatically?
 
 ### Why This Myth Exists?
