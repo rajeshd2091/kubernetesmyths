@@ -14,8 +14,11 @@ A common belief among Kubernetes users is that kube-proxy is responsible for ass
 
 ### Experiment & Validate
 To verify that kube-proxy is not responsible for pod IP allocation, follow these steps:
-**Step1: Check the IP of an existing pod before disabling kube-proxy:**
+
+**Step 1: Check the IP of an existing pod before disabling kube-proxy**
+
 Run the following command to view the pod’s details:
+
 ```
 kubectl get pods -o wide
 ```
@@ -26,18 +29,23 @@ NAME          READY STATUS    IP          NODE
 nginx-abc123  1/1   Running  10.244.1.2  worker-node-1
 ```
 
-**Step2: Disable kube-proxy temporarily:**
+**Step 2: Disable kube-proxy temporarily**
+
 Scale down the kube-proxy deployment to zero replicas:
+
 ```sh
 kubectl scale deployment/kube-proxy -n kube-system --replicas=0
 ```
 
-**Step3: Create a new pod and check if it receives an IP address:**
+**Step 3: Create a new pod and check if it receives an IP address**
+
 Launch a new pod and Then, verify the new pod's details::
+
 ```sh
 kubectl run test-pod --image=nginx --restart=Never
 kubectl get pods -o wide
 ```
+
 You’ll observe that the new pod still receives an IP address, even with kube-proxy disabled, which demonstrates that CNI, not kube-proxy, is responsible for assigning pod IPs.
 
 ### Key Takeaways
