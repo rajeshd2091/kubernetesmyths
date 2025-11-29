@@ -60,6 +60,7 @@ nav:
    
   - Workload Myths:
       - Overview: workload_myths/overview.md
+      - Complete application can be rolled back in Kubernetes: workload_myths/Complete_application_can_be_rolled_back_in_Kubernetes.md
       - Rolling Updates Are Only Supported by Deployments: workload_myths/Rolling_Updates_Are_Only_Supported_by_Deployments.md
       - DaemonSet always schedule pods on all nodes: workload_myths/DaemonSet_always_schedule_pods_on_all_nodes.md
       - Deployment Supports All Pod Restart Policies: workload_myths/Deployment_Supports_All_Pod_Restart_Policies.md
@@ -82,10 +83,8 @@ nav:
 
   - Security Myths:
       - Overview: security_myths/overview.md
-  - General Myths:
-      - Overview: general_myths/overview.md
-      - Kubernetes Namespaces Provide Complete Isolation: general_myths/Kubernetes_Namespaces_Provide_Complete_Isolation.md
-      - Complete application can be rolled back in Kubernetes: general_myths/Complete_application_can_be_rolled_back_in_Kubernetes.md
+      - Kubernetes Namespaces Provide Complete Isolation: security_myths/Kubernetes_Namespaces_Provide_Complete_Isolation.md
+      - Kubernetes Service Accounts Pull Container Images: security_myths/Kubernetes_Service_Accounts_Pull_Container_Images.md
 
   - Author: about.md
   #- About: about.md

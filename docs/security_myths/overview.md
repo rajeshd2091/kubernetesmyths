@@ -8,5 +8,6 @@ By understanding and correcting these myths, engineers can avoid design flaws, r
 
 ## Myths
 
-- Kubernetes Service Accounts Pull Container Images
+- [Kubernetes Namespaces Provide Complete Isolation](Kubernetes_Namespaces_Provide_Complete_Isolation.md)
+- [Kubernetes Service Accounts Pull Container Images](Kubernetes_Service_Accounts_Pull_Container_Images.md)
 - Kubernetes Always Injects the Default Service Account Into Every Pod

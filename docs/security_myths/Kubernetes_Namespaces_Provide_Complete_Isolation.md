@@ -6,25 +6,15 @@ A developer once confidently deployed production and staging workloads in separa
 ### Why This Myth Exists?
 This myth persists because namespaces feel like isolated environments in practice. They offer separate dashboards, configs, and resource groupings — which gives the illusion of sandboxing. Here’s why people are misled:
 
-- Visual & Logical Separation:
+- **Visual & Logical Separation:**  Tools like kubectl, dashboards, and YAML files naturally group resources by namespace, leading engineers to assume there's also runtime separation.
 
-Tools like kubectl, dashboards, and YAML files naturally group resources by namespace, leading engineers to assume there's also runtime separation.
+- **RBAC Defaults Are Namespace-Scoped:** Since many RBAC policies are written per-namespace, teams assume the underlying access and execution contexts are automatically isolated.
 
-- RBAC Defaults Are Namespace-Scoped:
+- **Cloud Vendors Encourage Namespaces for Multi-Tenancy:** Many best practices and tutorials recommend using namespaces for separating teams or environments — without emphasizing the limitations of that approach.
 
-Since many RBAC policies are written per-namespace, teams assume the underlying access and execution contexts are automatically isolated.
+- **No Immediate Breakage in Small Projects:** In development or staging setups, cross-namespace issues are rare — so teams wrongly assume this behavior holds in production environments too.
 
-- Cloud Vendors Encourage Namespaces for Multi-Tenancy:
-
-Many best practices and tutorials recommend using namespaces for separating teams or environments — without emphasizing the limitations of that approach.
-
-- No Immediate Breakage in Small Projects:
-
-In development or staging setups, cross-namespace issues are rare — so teams wrongly assume this behavior holds in production environments too.
-
-- Terminology Confusion:
-
-The term “namespace” is borrowed from programming (e.g., Java/C++), where it usually does imply hard boundaries. This contributes to the false sense of isolation.
+- **Terminology Confusion:** The term “namespace” is borrowed from programming (e.g., Java/C++), where it usually does imply hard boundaries. This contributes to the false sense of isolation.
 
 
 ### The Reality:
@@ -45,17 +35,22 @@ But they do not:
 - Restrict access without proper RBAC and Network Policies.
 
 ### Experiment & Validate
-1. Create two namespaces:
+**Step 1. Create two namespaces:**
+
 ```
 kubectl create namespace dev  
 kubectl create namespace prod  
 ```
-2. Deploy a test pod in each:
+
+**Step 2. Deploy a test pod in each:**
+
 ```
 kubectl run nginx-dev --image=nginx -n dev  
 kubectl run nginx-prod --image=nginx -n prod  
 ```
-3. From the dev namespace, try resolving a service in prod:
+
+**Setp 3. From the dev namespace, try resolving a service in prod:**
+
 ```
 kubectl exec -n dev nginx-dev -- nslookup nginx-prod.prod.svc.cluster.local 
 ```

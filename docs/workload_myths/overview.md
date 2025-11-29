@@ -8,6 +8,7 @@ By exposing these myths, we help you design resilient, predictable workloads tha
 
 ## Myths
 
+- [Complete application can be rolled back in Kubernetes](Complete_application_can_be_rolled_back_in_Kubernetes.md)  
 - [Rolling Updates Are Only Supported by Deployments](Rolling_Updates_Are_Only_Supported_by_Deployments.md)  
 - [DaemonSet always schedule pods on all nodes](DaemonSet_always_schedule_pods_on_all_nodes.md)  
 - [Deployment Supports All Pod Restart Policies](Deployment_Supports_All_Pod_Restart_Policies.md)

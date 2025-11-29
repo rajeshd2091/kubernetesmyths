@@ -49,7 +49,7 @@ kubectl get pods -o wide
 You’ll observe that the new pod still receives an IP address, even with kube-proxy disabled, which demonstrates that CNI, not kube-proxy, is responsible for assigning pod IPs.
 
 ### Key Takeaways
-- **Kube-proxy does not assign pod IPs** – Pod IP allocation is handled by the CNI plugin, not kube-proxy.
-- **Kube-proxy’s role is service routing** – It manages the traffic routing for services, but not the network configuration or IP assignment for pods.
+- **Kube-proxy does not assign pod IPs:** Pod IP allocation is handled by the CNI plugin, not kube-proxy.
+- **Kube-proxy’s role is service routing:** It manages the traffic routing for services, but not the network configuration or IP assignment for pods.
 - **Without a CNI plugin, pods will fail to receive IP addresses,** regardless of whether kube-proxy is running.
 - **Always ensure a CNI plugin is installed** when setting up Kubernetes to guarantee proper networking functionality for pods.
