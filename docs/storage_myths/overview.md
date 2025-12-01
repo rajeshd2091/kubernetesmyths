@@ -31,3 +31,4 @@ But understanding these components is only half the battle. The rest is unlearni
 
 - [K8s Cluster can have only one default Storage Class](Kubernetes_Cluster_Can_Have_Only_One_Default_StorageClass.md)  
 - [`ReadWriteOnce` mode allows only a single Pod to access the volume](ReadWriteOnce_mode_allows_only_a_single_Pod_to_access_the_volume.md)
+- [Kubernetes `PersistentVolumeClaim` Can Be Resized](Kubernetes_PersistentVolumeClaim_Can_Be_Resized.md)

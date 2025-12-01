@@ -79,6 +79,7 @@ nav:
       - Overview: storage_myths/overview.md
       - Kubernetes Cluster Can Have Only One Default StorageClass: storage_myths/Kubernetes_Cluster_Can_Have_Only_One_Default_StorageClass.md
       - ReadWriteOnce mode allows only a single Pod to access the volume: storage_myths/ReadWriteOnce_mode_allows_only_a_single_Pod_to_access_the_volume.md
+      - Kubernetes `PersistentVolumeClaim` Can Be Resized: storage_myths/Kubernetes_PersistentVolumeClaim_Can_Be_Resized.md
   
 
   - Security Myths:
