@@ -10,7 +10,7 @@ const config: Config = {
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
+
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
@@ -41,8 +41,10 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+           routeBasePath: '/',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
+          
           editUrl:
             'https://github.com/kubernetes-myths/website/blob/main/',
         },
@@ -56,7 +58,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/kubernetesmyths.png',
     colorMode: {
       respectPrefersColorScheme: true,
     },
@@ -115,23 +117,23 @@ const config: Config = {
           items: [
             {
               label: 'Architecture Myths',
-              to: '/docs/architecture-myths/overview',
+              to: '/architecture-myths/overview',
             },
              {
               label: 'Workload Myths',
-              to: '/docs/workload_myths/overview',
+              to: '/workload_myths/overview',
             },
              {
               label: 'Networking Myths',
-              to: '/docs/networking_myths/overview',
+              to: '/networking_myths/overview',
             },
              {
               label: 'Storage Myths',
-              to: '/docs/storage_myths/overview',
+              to: '/storage_myths/overview',
             },
              {
               label: 'Security Myths',
-              to: '/docs/security_myths/overview',
+              to: '/security_myths/overview',
             },
           ],
         },
