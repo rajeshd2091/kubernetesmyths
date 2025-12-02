@@ -1,3 +1,10 @@
+---
+id: overview
+title: Overview
+sidebar_label: Overview
+sidebar: workloadSidebar
+sidebar_position: 1
+---
 # Kubernetes Workload Myths
 
 Deploying workloads in Kubernetes may seem straightforward—but lurking underneath are subtle behaviors that often surprise even experienced engineers.

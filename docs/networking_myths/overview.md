@@ -1,3 +1,10 @@
+---
+id: overview
+title: Overview
+sidebar_label: Overview
+sidebar: networkingSidebar
+sidebar_position: 1
+---
 # Kubernetes Networking Myths
 
 Networking in Kubernetes often feels like magic—until it breaks.
@@ -8,7 +15,7 @@ Whether you're debugging traffic issues or designing multi-tenant clusters, bust
 
 ## Myths
 
-- [kube-proxy assign IP address to Pods](kube-proxy_assign_IP_address_to_Pods.md)  
+- [kube-proxy assign IP address to Pods](kube_proxy_assign_IP_address_to_Pods.md)  
 - [ClusterIP Service is Only for Internal Traffic](ClusterIP_Service_is_Only_for_Internal_Traffic.md)  
 - [ClusterIP Service Always Use Round-Robin Load Balancing](ClusterIP_Services_Always_Use_Round-Robin_Load_Balancing.md)
 - ['kubectl port-forward svc' sends traffic to a service](kubectl_port-forward_svc_sends_traffic_to_a_service.md)

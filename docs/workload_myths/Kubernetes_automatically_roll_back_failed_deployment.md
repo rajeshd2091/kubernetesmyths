@@ -1,4 +1,7 @@
-# Myth: Kubernetes automatically roll back failed Deployment
+---
+sidebar_position: 6
+---
+# Myth: Kubernetes Automatically Roll Back Failed Deployment
 A team deployed a new version of their application, expecting Kubernetes to roll it back automatically if something went wrong. Unfortunately, the deployment failed, but instead of rolling back, Kubernetes left it in a bad state. The team was surprised—wasn't Kubernetes supposed to handle this automatically?
 
 ### Why This Myth Exists?
@@ -115,7 +118,7 @@ kubectl get deployment nginx-deployment -o jsonpath='{.status.conditions}'
 ```
 The output will show a ProgressDeadlineExceeded condition but no rollback.
 
-###Key Takeaways
+### Key Takeaways
 - Kubernetes does not automatically roll back a failed Deployment.
 - You must manually trigger a rollback if needed.
 - progressDeadlineSeconds only marks a deployment as failed but does not roll it back.

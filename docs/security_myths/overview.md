@@ -1,3 +1,10 @@
+---
+id: overview
+title: Overview
+sidebar_label: Overview
+sidebar: securitySidebar
+sidebar_position: 1
+---
 # Kubernetes Security Myths
 
 Kubernetes security is often misunderstood, not because the platform is insecure, but because its design principles differ from traditional infrastructure and application security models. Many teams assume Kubernetes automatically provides strong isolation, network safety, secure defaults, or hardened workloads. In reality, Kubernetes only offers building blocks—misinterpreting these building blocks leads to configuration gaps, risky deployments, and a false sense of security.

@@ -1,3 +1,6 @@
+---
+sidebar_position: 7
+---
 # Myth: Kubernetes always injects information about Services into a Pod
 
 I was attending a free Kubernetes webinar where the speaker was walking through service discovery patterns.
@@ -25,7 +28,7 @@ Kubernetes only injects environment variables for services that already exist at
 
 - Headless Services (ClusterIP: None) do not get env vars injected.
 
-For dynamic environments, DNS-based service discovery (<service-name>.<namespace>.svc.cluster.local) is the reliable method — not env vars.
+For dynamic environments, DNS-based service discovery (`<service-name>.<namespace>`.svc.cluster.local) is the reliable method — not env vars.
 
 ###  Experiment & Validate
 

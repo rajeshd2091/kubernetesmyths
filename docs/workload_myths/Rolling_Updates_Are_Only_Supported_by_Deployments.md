@@ -1,3 +1,6 @@
+---
+sidebar_position: 3
+---
 # Myth: Rolling Updates Are Only Supported by Deployments
 Many believe that rolling updates are an exclusive feature of Kubernetes Deployments. This assumption leads to the misconception that StatefulSets and DaemonSets do not support rolling updates, forcing teams to use workarounds. But is this really the case?
 

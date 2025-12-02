@@ -1,3 +1,6 @@
+---
+sidebar_position: 5
+---
 # Myth: 'kubectl port-forward svc' sends traffic to a service
 Many engineers assume that running:
 ```

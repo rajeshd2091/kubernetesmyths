@@ -1,3 +1,6 @@
+---
+sidebar_position: 5
+---
 # Myth: Deployment Supports All Pod Restart Policies
 Can You Use Any Restart Policy in a Deployment? 
 Many believe that Deployments can be used with any Kubernetes Pod restart policy. The assumption is that you can define `Always`, `OnFailure`, or `Never` as the restartPolicy within a Deployment’s Pod spec.But that's not true.

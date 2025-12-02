@@ -1,3 +1,11 @@
+---
+id: overview
+title: Overview
+sidebar_label: Overview
+sidebar: storageSidebar
+sidebar_position: 1
+---
+
 # Kubernetes Storage Myths
 
 In Kubernetes, compute may steal the spotlight — but persistent storage is what truly powers workloads.
