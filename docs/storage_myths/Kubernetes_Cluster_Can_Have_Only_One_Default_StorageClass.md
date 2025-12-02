@@ -28,7 +28,7 @@ And you see two or more default classes marked "true".
  The  `"storageclass.kubernetes.io/is-default-class": "true" ` annotation is not enforced by Kubernetes — it's simply a marker.
 
 - When a PVC omits storageClassName, the system looks for a StorageClass with that annotation.
-- If more than one exists, the behavior is undefined and provider-specific.
+- If more than one exists,  Kubernetes uses the most recently created default StorageClass.
 - Kubernetes does not raise any warning or error when multiple defaults exist.
 - It's up to cluster admins to ensure only one default exists for consistent PVC provisioning.
 
@@ -65,5 +65,5 @@ You’ll see both **fast-default** and **slow-default** marked as default. No er
 ### Key Takeaways
 - Kubernetes allows multiple default StorageClasses without any warning.
 - The “default” is an annotation, not a rule.
-- If more than one default exists, PVCs without storageClassName may be handled unpredictably.
+- If more than one default exists, PVCs without storageClassName will use most recently created StorageClass.
 - Always ensure only one default StorageClass exists to avoid confusion.
