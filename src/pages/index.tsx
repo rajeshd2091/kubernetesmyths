@@ -25,21 +25,19 @@ export default function Home(): JSX.Element {
         />
 
     {/* TITLE */}
-    <h1
-      style={{
-        fontSize: "3.8rem",
-        fontWeight: 800,
-        marginBottom: "1.2rem",
-        background: "linear-gradient(90deg, #0052cc, #2684ff)",
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent",
-      }}
-    >
+    <h1 className={styles.heroTitle} style={{
+  fontSize: "3.8rem",
+  fontWeight: 800,
+  marginBottom: "1.2rem",
+  background: "linear-gradient(90deg, #0052cc, #2684ff)",
+  WebkitBackgroundClip: "text",
+  WebkitTextFillColor: "transparent",
+}}>
       Kubernetes Myths
     </h1>
 
     {/* SHORT SUBTITLE */}
-    <p
+    <p className={styles.heroSubtitle} 
       style={{
         fontSize: "1.45rem",
         maxWidth: "780px",
@@ -52,7 +50,7 @@ export default function Home(): JSX.Element {
     </p>
 
     {/* CTA BUTTONS */}
-    <div style={{ marginTop: "2.5rem" }}>
+    <div className={styles.heroButtons}  style={{ marginTop: "2.5rem" }}>
       <Link
         className="button button--primary button--lg margin-right--md"
         style={{ padding: "0.9rem 2rem", fontSize: "1.1rem", borderRadius: "8px" }}

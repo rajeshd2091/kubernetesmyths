@@ -5,9 +5,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
- // title: 'Kubernetes Myths',
-  title : 'Debunking Kubernetes misconceptions with proofs, experiments, and real-world validation.',
-  tagline: 'Dinosaurs are cool',
+
+  title : 'Stop believing. Start understanding.',
+  tagline: 'Stop believing. Start understanding.',
   favicon: 'img/favicon.ico',
 
 
