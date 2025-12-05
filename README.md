@@ -1,41 +1,49 @@
-# Website
+<p align="center">
+  <img src="static/img/kubernetesmyths.png" width="150">
+</p>
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+# Kubernetes Myths
 
-## Installation
+![GitHub Repo stars](https://img.shields.io/github/stars/kubernetes-myths/website?style=social)
+![GitHub forks](https://img.shields.io/github/forks/kubernetes-myths/website?style=social)
 
-```bash
-yarn
-```
+A collection of common misconceptions about Kubernetes — **busted with facts, examples, and diagrams**.
 
-## Local Development
+---
 
-```bash
-yarn start
-```
+## 🚀 About This Repository
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Kubernetes is powerful, but many developers, engineers, and even architects fall for common myths that lead to **misconfigurations, inefficiencies, or security risks**.  
 
-## Build
+This repository is dedicated to **clarifying these myths**, providing:
 
-```bash
-npm run build
-```
+- Clear myth statements  
+- Technical reality explained  
+- Examples, code snippets, and diagrams  
+- References to official documentation  
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Whether you’re **learning Kubernetes** or **designing cloud-native platforms**, this repo will save you from costly mistakes.
 
-## Deployment
+---
 
-Using SSH:
+## 📚 Myths Covered
 
-```bash
-USE_SSH=true npm run deploy
-```
+Some of the myths included:
 
-Not using SSH:
+1. **NodePort exposes your app to the Internet**  
+2. **Kubernetes scheduler considers resource limits when scheduling pods**  
+3. **ReadWriteOnce volumes can only use block storage**  
+4. **Kubernetes injects service info into all pods automatically**  
+5. **All access modes work on all storage backends**  
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
+…and many more!  
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+> Each myth is backed with **technical explanation, experiments, and diagrams** to help you validate the reality.
+
+---
+
+## Website
+
+You can also explore the myths on the live website: https://kubernetesmyths.com
+
+

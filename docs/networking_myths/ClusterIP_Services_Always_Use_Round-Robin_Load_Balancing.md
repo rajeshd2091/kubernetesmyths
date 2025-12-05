@@ -1,3 +1,6 @@
+---
+sidebar_position: 4
+---
 # Myth: ClusterIP Service Always Use Round-Robin Load Balancing
 **Have you ever assumed that your pods are getting equal traffic?** Many engineers believe Kubernetes distributes traffic evenly across pods in a strict round-robin manner. But if you actually monitor request distribution, you’ll notice something surprising—some pods receive more traffic than others. Is Kubernetes failing at load balancing? Not really. It turns out that the default behavior isn't what most people expect.
 

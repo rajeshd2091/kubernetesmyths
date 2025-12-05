@@ -19,3 +19,4 @@ Whether you're debugging traffic issues or designing multi-tenant clusters, bust
 - [ClusterIP Service is Only for Internal Traffic](ClusterIP_Service_is_Only_for_Internal_Traffic.md)  
 - [ClusterIP Service Always Use Round-Robin Load Balancing](ClusterIP_Services_Always_Use_Round-Robin_Load_Balancing.md)
 - ['kubectl port-forward svc' sends traffic to a service](kubectl_port-forward_svc_sends_traffic_to_a_service.md)
+- [NodePort Service Always Exposes the Application to the Internet](NodePort_Service_Always_Exposes_the_Application_to_the_Internet.md)
