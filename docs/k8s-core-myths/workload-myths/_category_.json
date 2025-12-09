@@ -1,0 +1,8 @@
+{
+  "label": "Workload Myths",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Debunking common Kubernetes workload myths to help you design resilient, predictable Pods, Deployments, StatefulSets, Jobs, and DaemonSets."
+  }
+}

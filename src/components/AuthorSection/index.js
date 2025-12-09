@@ -1,29 +1,68 @@
-import React from 'react';
-import Link from '@docusaurus/Link';
-import styles from './styles.module.css';
+import React from "react";
+import Link from "@docusaurus/Link";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
-export default function AuthorSection() {
+export default function MythSeal() {
   return (
-    <div className={styles.authorBox}>
+    <div
+      style={{
+        marginTop: "48px",
+        padding: "24px",
+        borderLeft: "4px solid #C89B3C", // Gold accent
+        background: "var(--ifm-background-surface-color)",
+        borderRadius: "12px",
+        boxShadow: "0 4px 14px rgba(0,0,0,0.08)",
+        display: "flex",
+        alignItems: "flex-start",
+        gap: "18px",
+      }}
+    >
+      {/* Profile/Logo */}
       <img
-        src="/img/author.jpg"
-        alt="Rajesh Deshpande"
-        className={styles.authorImage}
+        src={useBaseUrl('/img/themythologist.png')}
+        alt="The Kubernetes Mythologist"
+        style={{
+          width: "64px",
+          height: "64px",
+          borderRadius: "50%",
+          objectFit: "cover",
+          border: "2px solid #C89B3C",
+          boxShadow: "0 2px 6px rgba(0,0,0,0.15)",
+        }}
       />
 
-      <div>
-        <h3 className={styles.authorTitle}>About the Author</h3>
-        <p className={styles.authorBio}>
-          I’m <strong>Rajesh Deshpande</strong>, a Platform Engineer and DevSecOps
-          practitioner working deeply with Kubernetes, Go, and supply chain security.
-          I write Kubernetes Myths to stop misinformation through proofs,
-          experiments, and real-world validation.
-        </p>
+      {/* Text */}
+      <div style={{ flex: 1 }}>
+        <strong
+          style={{
+            fontSize: "1.05rem",
+            color: "var(--ifm-font-color-base)",
+          }}
+        >
+          ✓ Debunked & Authored by <span style={{ color: "#C89B3C" }}>Rajesh Deshpande, The Kubernetes Mythologist</span>
+        </strong>
 
-        <div className={styles.socialLinks}>
-          <Link to="https://www.linkedin.com/in/rajesh-deshpande-1058b9151/" target="_blank">LinkedIn</Link>
-          <Link to="https://github.com/rajeshd2091" target="_blank">GitHub</Link>
-    
+        <div
+          style={{
+            marginTop: "4px",
+            fontStyle: "italic",
+            opacity: 0.85,
+          }}
+        >
+          Where Kubernetes truths are uncovered — one misconception at a time.
+        </div>
+
+        <div style={{ marginTop: "10px" }}>
+          <Link
+            to="/the-kubernetes-mythologist"
+            style={{
+              fontWeight: "600",
+              textDecoration: "none",
+              color: "#C89B3C",
+            }}
+          >
+            → Meet the Mythologist
+          </Link>
         </div>
       </div>
     </div>

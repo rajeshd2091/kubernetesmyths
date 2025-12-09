@@ -1,0 +1,8 @@
+{
+  "label": "Architecture Myths",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Debunking common Kubernetes architecture myths to deepen understanding of components like the control plane, kubelet, and scheduler for better cluster design"
+  }
+}

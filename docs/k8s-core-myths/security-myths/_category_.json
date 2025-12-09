@@ -1,0 +1,8 @@
+{
+  "label": "Security Myths",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Exposing Kubernetes security myths to clarify best practices around RBAC, Pod Security, network policies, and cluster hardening."
+  }
+}

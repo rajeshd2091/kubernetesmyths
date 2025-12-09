@@ -1,0 +1,8 @@
+{
+  "label": "Storage Myths",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Debunking Kubernetes storage myths to reveal how PersistentVolumes, StatefulSets, CSI drivers, and storage provisioning truly behave."
+  }
+}

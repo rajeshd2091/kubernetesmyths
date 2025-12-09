@@ -56,6 +56,8 @@ const config: Config = {
     ],
   ],
 
+ 
+
   themeConfig: {
     // Replace with your project's social card
     image: 'img/kubernetesmyths.png',
@@ -71,37 +73,37 @@ const config: Config = {
       items: [
       
           {
+          label: 'K8s Core Myths',
           type: 'docSidebar',
-          sidebarId: 'architectureSidebar',
+          sidebarId: 'k8sCoreMythsSidebar',
           position: 'left',
-          label: 'Architecture Myths',
+        
         },
-         {
+        {
+          label: 'K8s Ecosystem Myths',
           type: 'docSidebar',
-          sidebarId: 'workloadSidebar',
+          sidebarId: 'k8sEcosystemMythsSidebar',
           position: 'left',
-          label: 'Workload Myths',
+         
         },
         
          {
+          label: 'K8s Platform Myths',
           type: 'docSidebar',
-          sidebarId: 'networkingSidebar',
+          sidebarId: 'k8sPlatformMythsSidebar',
           position: 'left',
-          label: 'Networking Myths',
+          
         },
-        {
-          type: 'docSidebar',
-          sidebarId: 'storageSidebar',
-          position: 'left',
-          label: 'Storage Myths',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'securitySidebar',
-          position: 'left',
-          label: 'Security Myths',
-        },
+        
        
+          {
+          label: 'K8s Domain Myths',
+          type: 'docSidebar',
+          sidebarId: 'k8sDomainMythsSidebar',
+          position: 'left',
+        
+        },
+        { to: '/the-kubernetes-mythologist', label: 'The Kubernetes Mythologist', position: 'right' },
         {
           href: 'https://github.com/kubernetes-myths/website',
           label: 'GitHub',
@@ -117,28 +119,28 @@ const config: Config = {
           items: [
             {
               label: 'Architecture Myths',
-              to: '/architecture-myths/overview',
+              to: '/category/architecture-myths',
             },
              {
               label: 'Workload Myths',
-              to: '/workload_myths/overview',
+              to: '/category/workload-myths',
             },
              {
               label: 'Networking Myths',
-              to: '/networking_myths/overview',
+              to: '/category/networking-myths',
             },
              {
               label: 'Storage Myths',
-              to: '/storage_myths/overview',
+              to: '/category/storage-myths',
             },
              {
               label: 'Security Myths',
-              to: '/security_myths/overview',
+              to: '/category/security-myths',
             },
           ],
         },
         {
-          title: 'Author',
+          title: 'The Kubernetes Mythologist',
           items: [
             {
               label: 'Linkedin',

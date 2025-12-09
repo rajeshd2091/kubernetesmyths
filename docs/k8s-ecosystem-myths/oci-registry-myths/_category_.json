@@ -1,0 +1,8 @@
+{
+  "label": "OCI Registry Myths",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "OCI-compliant registries, from Docker Hub to Harbor, often spark misconceptions around image tags, digests, immutability, and artifact support — leading to deployment and security issues."
+  }
+}

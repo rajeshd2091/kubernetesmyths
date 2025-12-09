@@ -54,7 +54,7 @@ export default function Home(): JSX.Element {
       <Link
         className="button button--primary button--lg margin-right--md"
         style={{ padding: "0.9rem 2rem", fontSize: "1.1rem", borderRadius: "8px" }}
-        to="/architecture-myths/overview"
+        to="/category/architecture-myths"
       >
         Explore Myths
       </Link>
@@ -205,7 +205,7 @@ export default function Home(): JSX.Element {
 
           <Link
             className="button button--primary button--lg"
-            to="/architecture-myths/overview"
+            to="/category/architecture-myths"
             style={{ marginTop: "1.5rem" }}
           >
             Start Reading →
