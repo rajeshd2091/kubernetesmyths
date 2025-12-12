@@ -54,9 +54,9 @@ export default function Home(): JSX.Element {
       <Link
         className="button button--primary button--lg margin-right--md"
         style={{ padding: "0.9rem 2rem", fontSize: "1.1rem", borderRadius: "8px" }}
-        to="/category/architecture-myths"
+        to="kubernetes-myths"
       >
-        Explore Myths
+        Explore All Myths
       </Link>
 
       <Link
@@ -67,9 +67,9 @@ export default function Home(): JSX.Element {
           borderRadius: "8px",
           border: "1px solid #0052cc",
         }}
-        to="https://github.com/kubernetes-myths/website"
+        to="/category/architecture-myths"
       >
-        GitHub Repo
+        Start Myth-Busting
       </Link>
     </div>
 {/* VISITOR COUNTER - PLACE IT HERE */}

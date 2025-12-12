@@ -1,0 +1,31 @@
+# Kubernetes Myths Index
+
+Welcome! Here is a list of all Kubernetes myths we have explored so far:
+- [Myth: Control Plane Nodes Don’t Need a Container Runtime](/k8s-core-myths/architecture-myths/Control_Plane_Nodes_Don’t_Need_a_Container_Runtime)
+- [Myth: Kubelet is Exclusive to Worker Nodes](/k8s-core-myths/architecture-myths/Kubelet_is_Exclusive_to_Worker_Nodes)
+- [Myth: Kubernetes Cluster Must Have Three Control Plane Nodes](/k8s-core-myths/architecture-myths/Kubernetes_Cluster_Must_Have_Three_Control_Plane_Nodes)
+- [Myth: Kubernetes Clusters Can't Function Without Kube-Proxy](/k8s-core-myths/architecture-myths/Kubernetes_Clusters_Can't_Function_Without_Kube-Proxy)
+- [Myth: Kubernetes Networking Works Fine Without a CNI Plugin](/k8s-core-myths/architecture-myths/Kubernetes_Networking_Works_Fine_Without_a_CNI_Plugin)
+- [Myth: Complete application can be rolled back in Kubernetes](k8s-core-myths/workload-myths/Complete_application_can_be_rolled_back_in_Kubernetes)
+- [Myth: DaemonSet_always_schedule_pods_on_all_nodes](k8s-core-myths/workload-myths/DaemonSet_always_schedule_pods_on_all_nodes)
+- [Myth: Rolling Updates Are Only Supported by Deployments](k8s-core-myths/workload-myths/Rolling_Updates_Are_Only_Supported_by_Deployments)
+- [Myth: Deployment_Supports_All_Pod_Restart_Policies](k8s-core-myths/workload-myths/Deployment_Supports_All_Pod_Restart_Policies)
+- [Myth: Kubernetes_automatically_roll_back_failed_deployment](k8s-core-myths/workload-myths/Kubernetes_automatically_roll_back_failed_deployment)
+- [Myth: K8s_Injects_Svc_Info_Into_A_Pods_Env_Var](k8s-core-myths/workload-myths/K8s_Injects_Svc_Info_Into_A_Pods_Env_Var)
+- [Myth: kube_proxy_assign_IP_address_to_Pods](k8s-core-myths/networking-myths/kube_proxy_assign_IP_address_to_Pods)
+- [Myth: ClusterIP_Service_is_Only_for_Internal_Traffic](k8s-core-myths/networking-myths/ClusterIP_Service_is_Only_for_Internal_Traffic)
+- [Myth: ClusterIP_Services_Always_Use_Round-Robin_Load_Balancing](k8s-core-myths/networking-myths/ClusterIP_Services_Always_Use_Round-Robin_Load_Balancing)
+- [Myth:  kubectl_port-forward_svc_sends_traffic_to_a_service](k8s-core-myths/networking-myths/kubectl_port-forward_svc_sends_traffic_to_a_service)
+- [Myth: NodePort_Service_Always_Exposes_the_Application_to_the_Internet](k8s-core-myths/networking-myths/NodePort_Service_Always_Exposes_the_Application_to_the_Internet)
+- [Myth: Kubernetes_Cluster_Can_Have_Only_One_Default_StorageClass](k8s-core-myths/storage-myths/Kubernetes_Cluster_Can_Have_Only_One_Default_StorageClass)
+- [Myth: Kubernetes_PersistentVolumeClaim_Can_Be_Resized](k8s-core-myths/storage-myths/Kubernetes_PersistentVolumeClaim_Can_Be_Resized)
+- [Myth: ReadWriteOnce_mode_allows_only_a_single_Pod_to_access_the_volume](k8s-core-myths/storage-myths/ReadWriteOnce_mode_allows_only_a_single_Pod_to_access_the_volume)
+- [Myth: Kubernetes_Namespaces_Provide_Complete_Isolation](k8s-core-myths/security-myths/Kubernetes_Namespaces_Provide_Complete_Isolation)
+- [Myth: Kubernetes_Service_Accounts_Pull_Container_Images](k8s-core-myths/security-myths/Kubernetes_Service_Accounts_Pull_Container_Images)
+- [Myth: Kubernetes_Scheduler_Considers_Resource_Limits_for_Scheduling](k8s-core-myths/scheduling-myths/Kubernetes_Scheduler_Considers_Resource_Limits_for_Scheduling)
+- [Myth: A_Higher-Priority_Pod_Will_Always_Preempt_a_Lower-Priority_Pod](k8s-core-myths/scheduling-myths/A_Higher-Priority_Pod_Will_Always_Preempt_a_Lower-Priority_Pod)
+- [Myth: Container_images_truly_support_build%20once_deploy_anywhere](k8s-ecosystem-myths/container-image-myths/Container_images_truly_support_build%20once_deploy_anywhere)
+- [Myth: OCI_Registries_Only_Support_Container_Images](k8s-ecosystem-myths/oci-registry-myths/OCI_Registries_Only_Support_Container_Images)
+- [Myth: GKE_Zonal_Clusters_Are_Cheaper_Than_Regional_Clusters](k8s-platform-myths/GKE%20Myths/GKE_Zonal_Clusters_Are_Cheaper_Than_Regional_Clusters)
+
+

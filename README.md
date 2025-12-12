@@ -2,7 +2,7 @@
   <img src="static/img/kubernetesmyths.png" width="150">
 </p>
 
-# Kubernetes Myths ()
+# Kubernetes Myths
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/kubernetes-myths/website?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/kubernetes-myths/website?style=social)
