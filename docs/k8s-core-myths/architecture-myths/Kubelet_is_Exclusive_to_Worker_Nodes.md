@@ -4,7 +4,6 @@ sidebar_position: 2
 
 # Myth: Kubelet is Exclusive to Worker Nodes
 
-
 You SSH into a control plane node, expecting to see only control plane components like the API server, controller manager, and scheduler running. But wait—why is Kubelet there? Wasn't it supposed to run only on worker nodes?
 
 You double-check your understanding: worker nodes handle workloads, and Kubelet is responsible for managing pods on those nodes. Control plane nodes, on the other hand, orchestrate everything but don’t run regular workloads. So, why does `ps aux | grep kubelet` show Kubelet actively running on a control plane node?
