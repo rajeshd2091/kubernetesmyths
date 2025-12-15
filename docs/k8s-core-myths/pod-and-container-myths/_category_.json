@@ -1,0 +1,8 @@
+{
+  "label": "Pod and Container Myths",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Pods and Containers are often misunderstood in Kubernetes. This section uncovers the hidden truths about resource usage, Pod Overhead, and scheduling, separating myths from reality with practical examples and code insights."
+  }
+}

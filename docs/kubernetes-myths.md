@@ -28,5 +28,7 @@ Welcome! Here is a list of all Kubernetes myths we have explored so far:
 - [Myth: Container images truly support build%20once deploy anywhere](k8s-ecosystem-myths/container-image-myths/Container_images_truly_support_build%20once_deploy_anywhere)
 - [Myth: OCI Registries Only Support Container Images](k8s-ecosystem-myths/oci-registry-myths/OCI_Registries_Only_Support_Container_Images)
 - [Myth: GKE Zonal Clusters Are Cheaper Than Regional Clusters](k8s-platform-myths/GKE%20Myths/GKE_Zonal_Clusters_Are_Cheaper_Than_Regional_Clusters)
+- [Myth: Pods Don’t Consume Compute Resources Because They Are Logical](k8s-core-myths/pod-and-container-myths/Pods_Don’t_Consume_Compute_Resources_Because_They_Are_Logical)
+- [Myth: Kubernetes Has Only One Pod Type](k8s-core-myths/pod-and-container-myths/Kubernetes_Has_Only_One_Pod_Type)
 
 
