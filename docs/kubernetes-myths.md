@@ -28,6 +28,7 @@ Welcome! Here is a list of all Kubernetes myths we have explored so far:
 - [Myth: A Higher-Priority Pod Will Always Preempt a Lower-Priority Pod](k8s-core-myths/scheduling-myths/A_Higher-Priority_Pod_Will_Always_Preempt_a_Lower-Priority_Pod)
 - [Myth: Kubernetes Has a Concept of Node Anti-Affinity](k8s-core-myths/scheduling-myths/Kubernetes_Has_a_Concept_of_Node_Anti-Affinity)
 - [Myth: Container images truly support build%20once deploy anywhere](k8s-ecosystem-myths/container-image-myths/Container_images_truly_support_build%20once_deploy_anywhere)
+- [Myth: A Container Image Digest Uniquely Identifies One Image](k8s-ecosystem-myths/container-image-myths/A_Container_Image_Digest_Uniquely_Identifies_One_Image)
 - [Myth: OCI Registries Only Support Container Images](k8s-ecosystem-myths/oci-registry-myths/OCI_Registries_Only_Support_Container_Images)
 - [Myth: GKE Zonal Clusters Are Cheaper Than Regional Clusters](k8s-platform-myths/GKE%20Myths/GKE_Zonal_Clusters_Are_Cheaper_Than_Regional_Clusters)
 - [Myth: Pods Don’t Consume Compute Resources Because They Are Logical](k8s-core-myths/pod-and-container-myths/Pods_Don’t_Consume_Compute_Resources_Because_They_Are_Logical)
