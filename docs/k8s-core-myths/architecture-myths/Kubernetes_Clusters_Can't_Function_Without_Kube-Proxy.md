@@ -16,7 +16,9 @@ You deploy a Kubernetes cluster and start checking the usual system components. 
 - **Many high-performance Kubernetes clusters**—especially those optimized for large-scale workloads—choose to disable Kube-Proxy in favor of these more efficient networking alternatives.
 
 ### Experiment & Validate
+
 **Step 1: Disable Kube-Proxy**
+
 Scale down Kube-Proxy to remove it from the cluster:
 ```
 kubectl -n kube-system scale deployment kube-proxy --replicas=0

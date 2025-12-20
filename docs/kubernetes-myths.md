@@ -3,9 +3,11 @@
 Welcome! Here is a list of all Kubernetes myths we have explored so far:
 - [Myth: Control Plane Nodes Don’t Need a Container Runtime](/k8s-core-myths/architecture-myths/Control_Plane_Nodes_Don’t_Need_a_Container_Runtime)
 - [Myth: Kubelet is Exclusive to Worker Nodes](/k8s-core-myths/architecture-myths/Kubelet_is_Exclusive_to_Worker_Nodes)
-- [Myth: Kubernetes Cluster Must Have Three Control Plane Nodes](/k8s-core-myths/architecture-myths/Kubernetes_Cluster_Must_Have_Three_Control_Plane_Nodes)
 - [Myth: Kubernetes Clusters Can't Function Without Kube-Proxy](/k8s-core-myths/architecture-myths/Kubernetes_Clusters_Can't_Function_Without_Kube-Proxy)
 - [Myth: Kubernetes Networking Works Fine Without a CNI Plugin](/k8s-core-myths/architecture-myths/Kubernetes_Networking_Works_Fine_Without_a_CNI_Plugin)
+- [Myth: Image Garbage collector deletes images as soon as pods stop using them](/k8s-core-myths/architecture-myths/Garbage_collector_deletes_images_as_soon_as_pods_stop_using_them)
+- [Myth: Image Garbage collector runs only when disk usage crosses a High-Threshold](/k8s-core-myths/architecture-myths/Image_Garbage_collector_runs_only_when_disk_usage_crosses_a_High-Threshold)
+- [Myth: Kubelet can modify any Kubernetes object through the API server](/k8s-core-myths/architecture-myths/Kubelet_can_modify_any_Kubernetes_object_through_the_API_server)
 - [Myth: Complete application can be rolled back in Kubernetes](k8s-core-myths/workload-myths/Complete_application_can_be_rolled_back_in_Kubernetes)
 - [Myth: DaemonSet always schedule pods on all nodes](k8s-core-myths/workload-myths/DaemonSet_always_schedule_pods_on_all_nodes)
 - [Myth: Rolling Updates Are Only Supported by Deployments](k8s-core-myths/workload-myths/Rolling_Updates_Are_Only_Supported_by_Deployments)
