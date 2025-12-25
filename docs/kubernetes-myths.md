@@ -36,5 +36,6 @@ Welcome! Here is a list of all Kubernetes myths we have explored so far:
 - [Myth: Pods Don’t Consume Compute Resources Because They Are Logical](k8s-core-myths/pod-and-container-myths/Pods_Don’t_Consume_Compute_Resources_Because_They_Are_Logical)
 - [Myth: Kubernetes Has Only One Pod Type](k8s-core-myths/pod-and-container-myths/Kubernetes_Has_Only_One_Pod_Type)
 - [Myth: Init Containers can run in any order or in parallel](k8s-core-myths/pod-and-container-myths/Init_Containers_can_run_in_any_order_or_in_parallel)
+- [Myth: Kubernetes Pods Always Need a Service Account](k8s-core-myths/pod-and-container-myths/Kubernetes_Pods_Always_Need_a_Service_Account)
 
 
