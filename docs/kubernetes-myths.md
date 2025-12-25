@@ -23,15 +23,18 @@ Welcome! Here is a list of all Kubernetes myths we have explored so far:
 - [Myth: Kubernetes_PersistentVolumeClaim_Can_Be_Resized](k8s-core-myths/storage-myths/Kubernetes_PersistentVolumeClaim_Can_Be_Resized)
 - [Myth: ReadWriteOnce_mode_allows_only_a_single_Pod_to_access_the_volume](k8s-core-myths/storage-myths/ReadWriteOnce_mode_allows_only_a_single_Pod_to_access_the_volume)
 - [Myth: Kubernetes_Namespaces_Provide_Complete_Isolation](k8s-core-myths/security-myths/Kubernetes_Namespaces_Provide_Complete_Isolation)
+- [Myth: Pod Security Admission enforces security on running Pods](k8s-core-myths/security-myths/Pod_Security_Admission_enforces_security_on_running_Pods)
 - [Myth: Kubernetes_Service_Accounts_Pull_Container_Images](k8s-core-myths/security-myths/Kubernetes_Service_Accounts_Pull_Container_Images)
 - [Myth: Kubernetes Scheduler Considers Resource Limits for Scheduling](k8s-core-myths/scheduling-myths/Kubernetes_Scheduler_Considers_Resource_Limits_for_Scheduling)
 - [Myth: A Higher-Priority Pod Will Always Preempt a Lower-Priority Pod](k8s-core-myths/scheduling-myths/A_Higher-Priority_Pod_Will_Always_Preempt_a_Lower-Priority_Pod)
 - [Myth: Kubernetes Has a Concept of Node Anti-Affinity](k8s-core-myths/scheduling-myths/Kubernetes_Has_a_Concept_of_Node_Anti-Affinity)
+- [Myth: Pod memory requests are only used for scheduling](k8s-core-myths/scheduling-myths/Pod_memory_requests_are_only_used_for_scheduling)
 - [Myth: Container images truly support build%20once deploy anywhere](k8s-ecosystem-myths/container-image-myths/Container_images_truly_support_build%20once_deploy_anywhere)
 - [Myth: A Container Image Digest Uniquely Identifies One Image](k8s-ecosystem-myths/container-image-myths/A_Container_Image_Digest_Uniquely_Identifies_One_Image)
 - [Myth: OCI Registries Only Support Container Images](k8s-ecosystem-myths/oci-registry-myths/OCI_Registries_Only_Support_Container_Images)
 - [Myth: GKE Zonal Clusters Are Cheaper Than Regional Clusters](k8s-platform-myths/GKE%20Myths/GKE_Zonal_Clusters_Are_Cheaper_Than_Regional_Clusters)
 - [Myth: Pods Don’t Consume Compute Resources Because They Are Logical](k8s-core-myths/pod-and-container-myths/Pods_Don’t_Consume_Compute_Resources_Because_They_Are_Logical)
 - [Myth: Kubernetes Has Only One Pod Type](k8s-core-myths/pod-and-container-myths/Kubernetes_Has_Only_One_Pod_Type)
+- [Myth: Init Containers can run in any order or in parallel](k8s-core-myths/pod-and-container-myths/Init_Containers_can_run_in_any_order_or_in_parallel)
 
 

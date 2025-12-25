@@ -2,6 +2,7 @@
 sidebar_position: 3
 ---
 # Myth: Kubernetes Service Accounts Pull Container Images
+
 During internal security audits and team discussions, several engineers assumed that ServiceAccounts were used to authenticate with container registries. One developer even tried granting additional RBAC permissions to a ServiceAccount in an attempt to fix an image-pull failure from a private registry. The issue persisted, and only later did the team realize that the ServiceAccount had no role in image retrieval at all. The failure was caused by missing imagePullSecrets, not ServiceAccount permissions.
 
 ### Why This Myth Exists?
@@ -62,7 +63,7 @@ Failed to pull image "my-private-registry.com/app:v1": authentication required
 ```
 Notice that RBAC permissions on the ServiceAccount do not affect this result.
 
-**Setp 2. Attach imagePullSecrets directly to the Pod**
+**Step 2. Attach imagePullSecrets directly to the Pod**
 
 ```yaml
 apiVersion: v1
@@ -80,7 +81,7 @@ spec:
 
 The Pod will now successfully pull the image and start, proving that registry authentication depends on imagePullSecrets, not ServiceAccount permissions.
 
-**Setp 3. Attach imagePullSecrets to a ServiceAccount**
+**Step 3. Attach imagePullSecrets to a ServiceAccount**
 
 ```yaml
 apiVersion: v1
