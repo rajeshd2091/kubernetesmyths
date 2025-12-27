@@ -1,6 +1,6 @@
 {
-  "label": "GKE Myths",
-  "position": 1,
+  "label": "Google GKE Myths",
+  "position": 2,
   "link": {
     "type": "generated-index",
     "description": "Debunking common misconceptions about GKE to help you make smarter, more reliable Kubernetes decisions."

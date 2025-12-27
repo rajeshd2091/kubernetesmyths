@@ -1,41 +1,128 @@
-# Kubernetes Myths Index
+---
+title: Kubernetes Myths & Reality - Production, Architecture & Interview Guide
+description: A comprehensive guide to debunking Kubernetes myths, covering architecture, networking, security, EKS, GKE, AKS, and common interview traps. Perfect for CKA/CKS prep and production cluster deep dives.
+sidebar_position: 2
+keywords:
+  - kubernetes interview questions
+  - kubernetes myths
+  - k8s tricky questions
+  - production kubernetes
+  - eks vs gke comparison
+  - kubernetes architecture deep dive
+  - kubernetes scheduler myths
+  - kubernetes security myths
+canonical_url: https://kubernetesmyths.com/kubernetes-myths
+tags:
+  - kubernetes
+  - myths
+  - cloud-native
+  - devops
+  - eks
+  - gke
+  - aks
+---
 
-Welcome! Here is a list of all Kubernetes myths we have explored so far:
-- [Myth: Control Plane Nodes Don’t Need a Container Runtime](/k8s-core-myths/architecture-myths/Control_Plane_Nodes_Don’t_Need_a_Container_Runtime)
-- [Myth: Kubelet is Exclusive to Worker Nodes](/k8s-core-myths/architecture-myths/Kubelet_is_Exclusive_to_Worker_Nodes)
-- [Myth: Kubernetes Clusters Can't Function Without Kube-Proxy](/k8s-core-myths/architecture-myths/Kubernetes_Clusters_Can't_Function_Without_Kube-Proxy)
-- [Myth: Kubernetes Networking Works Fine Without a CNI Plugin](/k8s-core-myths/architecture-myths/Kubernetes_Networking_Works_Fine_Without_a_CNI_Plugin)
-- [Myth: Image Garbage collector deletes images as soon as pods stop using them](/k8s-core-myths/architecture-myths/Garbage_collector_deletes_images_as_soon_as_pods_stop_using_them)
-- [Myth: Image Garbage collector runs only when disk usage crosses a High-Threshold](/k8s-core-myths/architecture-myths/Image_Garbage_collector_runs_only_when_disk_usage_crosses_a_High-Threshold)
-- [Myth: Kubelet can modify any Kubernetes object through the API server](/k8s-core-myths/architecture-myths/Kubelet_can_modify_any_Kubernetes_object_through_the_API_server)
+# Kubernetes Myths: The Ultimate Production & Interview Guide
+
+Mastering Kubernetes requires understanding not just *how* it works, but *why* it behaves the way it does—especially in production environments, complex clusters, and across different platforms.
+
+This guide explores the most common **production pitfalls**, **architectural misunderstandings**, and **operational nuances** engineers encounter. While it can also help with tricky interview questions, the primary focus is on real-world cluster behavior and technical reality, giving you a deeper understanding of Kubernetes beyond tutorials.
+
+---
+
+## Jump to Section
+- [Core Kubernetes Myths](#core-kubernetes-myths)
+  - [Architecture](#architecture)
+  - [Workloads & Pods](#workloads--pods)
+  - [Networking](#networking)
+  - [Scheduling](#scheduling)
+  - [Storage](#storage)
+  - [Security](#security)
+  - [Pods & Containers](#pods--containers)
+- [Platform Myths](#platform-myths)
+  - [Amazon EKS](#amazon-eks)
+  - [Google GKE](#google-gke)
+- [Ecosystem Myths](#ecosystem-myths)
+  - [Container Images](#container-images)
+  - [Container Registries](#container-registries)
+
+---
+
+## Core Kubernetes Myths
+
+These myths touch on the fundamental architecture and primitives of Kubernetes.
+
+### Architecture
+- [Myth: Control Plane Nodes Don’t Need a Container Runtime](k8s-core-myths/architecture-myths/Control_Plane_Nodes_Don’t_Need_a_Container_Runtime)
+- [Myth: Kubelet is Exclusive to Worker Nodes](k8s-core-myths/architecture-myths/Kubelet_is_Exclusive_to_Worker_Nodes)
+- [Myth: Kubernetes Clusters Can't Function Without Kube-Proxy](k8s-core-myths/architecture-myths/Kubernetes_Clusters_Can't_Function_Without_Kube-Proxy)
+- [Myth: Kubernetes Networking Works Fine Without a CNI Plugin](k8s-core-myths/architecture-myths/Kubernetes_Networking_Works_Fine_Without_a_CNI_Plugin)
+- [Myth: Garbage collector deletes images as soon as pods stop using them](k8s-core-myths/architecture-myths/Garbage_collector_deletes_images_as_soon_as_pods_stop_using_them)
+- [Myth: Image Garbage collector runs only when disk usage crosses a High-Threshold](k8s-core-myths/architecture-myths/Image_Garbage_collector_runs_only_when_disk_usage_crosses_a_High-Threshold)
+- [Myth: Kubelet can modify any Kubernetes object through the API server](k8s-core-myths/architecture-myths/Kubelet_can_modify_any_Kubernetes_object_through_the_API_server)
+- [Myth: Pod requests are strictly guaranteed](k8s-core-myths/scheduling-myths/Pod_memory_requests_are_only_used_for_scheduling)
+
+### Workloads & Pods
+- [Myth: Kubernetes automatically rolls back failed deployments](k8s-core-myths/workload-myths/Kubernetes_automatically_roll_back_failed_deployment)
 - [Myth: Complete application can be rolled back in Kubernetes](k8s-core-myths/workload-myths/Complete_application_can_be_rolled_back_in_Kubernetes)
-- [Myth: DaemonSet always schedule pods on all nodes](k8s-core-myths/workload-myths/DaemonSet_always_schedule_pods_on_all_nodes)
+- [Myth: DaemonSet always schedules pods on all nodes](k8s-core-myths/workload-myths/DaemonSet_always_schedule_pods_on_all_nodes)
 - [Myth: Rolling Updates Are Only Supported by Deployments](k8s-core-myths/workload-myths/Rolling_Updates_Are_Only_Supported_by_Deployments)
-- [Myth: Deployment_Supports_All_Pod_Restart_Policies](k8s-core-myths/workload-myths/Deployment_Supports_All_Pod_Restart_Policies)
-- [Myth: Kubernetes_automatically_roll_back_failed_deployment](k8s-core-myths/workload-myths/Kubernetes_automatically_roll_back_failed_deployment)
-- [Myth: K8s_Injects_Svc_Info_Into_A_Pods_Env_Var](k8s-core-myths/workload-myths/K8s_Injects_Svc_Info_Into_A_Pods_Env_Var)
+- [Myth: Deployment Supports All Pod Restart Policies](k8s-core-myths/workload-myths/Deployment_Supports_All_Pod_Restart_Policies)
+- [Myth: K8s Injects Svc Info Into A Pods Env Var](k8s-core-myths/workload-myths/K8s_Injects_Svc_Info_Into_A_Pods_Env_Var)
+
+### Networking
+- [Myth: ClusterIP Service is Only for Internal Traffic](k8s-core-myths/networking-myths/ClusterIP_Service_is_Only_for_Internal_Traffic)
+- [Myth: ClusterIP Services Always Use Round-Robin Load Balancing](k8s-core-myths/networking-myths/ClusterIP_Services_Always_Use_Round-Robin_Load_Balancing)
+- [Myth: NodePort Service Always Exposes the Application to the Internet](k8s-core-myths/networking-myths/NodePort_Service_Always_Exposes_the_Application_to_the_Internet)
 - [Myth: kube_proxy_assign_IP_address_to_Pods](k8s-core-myths/networking-myths/kube_proxy_assign_IP_address_to_Pods)
-- [Myth: ClusterIP_Service_is_Only_for_Internal_Traffic](k8s-core-myths/networking-myths/ClusterIP_Service_is_Only_for_Internal_Traffic)
-- [Myth: ClusterIP_Services_Always_Use_Round-Robin_Load_Balancing](k8s-core-myths/networking-myths/ClusterIP_Services_Always_Use_Round-Robin_Load_Balancing)
-- [Myth:  kubectl_port-forward_svc_sends_traffic_to_a_service](k8s-core-myths/networking-myths/kubectl_port-forward_svc_sends_traffic_to_a_service)
-- [Myth: NodePort_Service_Always_Exposes_the_Application_to_the_Internet](k8s-core-myths/networking-myths/NodePort_Service_Always_Exposes_the_Application_to_the_Internet)
-- [Myth: Kubernetes_Cluster_Can_Have_Only_One_Default_StorageClass](k8s-core-myths/storage-myths/Kubernetes_Cluster_Can_Have_Only_One_Default_StorageClass)
-- [Myth: Kubernetes_PersistentVolumeClaim_Can_Be_Resized](k8s-core-myths/storage-myths/Kubernetes_PersistentVolumeClaim_Can_Be_Resized)
-- [Myth: ReadWriteOnce_mode_allows_only_a_single_Pod_to_access_the_volume](k8s-core-myths/storage-myths/ReadWriteOnce_mode_allows_only_a_single_Pod_to_access_the_volume)
-- [Myth: Kubernetes_Namespaces_Provide_Complete_Isolation](k8s-core-myths/security-myths/Kubernetes_Namespaces_Provide_Complete_Isolation)
-- [Myth: Pod Security Admission enforces security on running Pods](k8s-core-myths/security-myths/Pod_Security_Admission_enforces_security_on_running_Pods)
-- [Myth: Kubernetes_Service_Accounts_Pull_Container_Images](k8s-core-myths/security-myths/Kubernetes_Service_Accounts_Pull_Container_Images)
-- [Myth: Kubernetes Scheduler Considers Resource Limits for Scheduling](k8s-core-myths/scheduling-myths/Kubernetes_Scheduler_Considers_Resource_Limits_for_Scheduling)
+- [Myth: kubectl_port-forward_svc_sends_traffic_to_a_service](k8s-core-myths/networking-myths/kubectl_port-forward_svc_sends_traffic_to_a_service)
+
+### Scheduling
 - [Myth: A Higher-Priority Pod Will Always Preempt a Lower-Priority Pod](k8s-core-myths/scheduling-myths/A_Higher-Priority_Pod_Will_Always_Preempt_a_Lower-Priority_Pod)
 - [Myth: Kubernetes Has a Concept of Node Anti-Affinity](k8s-core-myths/scheduling-myths/Kubernetes_Has_a_Concept_of_Node_Anti-Affinity)
-- [Myth: Pod memory requests are only used for scheduling](k8s-core-myths/scheduling-myths/Pod_memory_requests_are_only_used_for_scheduling)
-- [Myth: Container images truly support build%20once deploy anywhere](k8s-ecosystem-myths/container-image-myths/Container_images_truly_support_build%20once_deploy_anywhere)
-- [Myth: A Container Image Digest Uniquely Identifies One Image](k8s-ecosystem-myths/container-image-myths/A_Container_Image_Digest_Uniquely_Identifies_One_Image)
-- [Myth: OCI Registries Only Support Container Images](k8s-ecosystem-myths/oci-registry-myths/OCI_Registries_Only_Support_Container_Images)
-- [Myth: GKE Zonal Clusters Are Cheaper Than Regional Clusters](k8s-platform-myths/GKE%20Myths/GKE_Zonal_Clusters_Are_Cheaper_Than_Regional_Clusters)
+- [Myth: Kubernetes Scheduler Considers Resource Limits for Scheduling](k8s-core-myths/scheduling-myths/Kubernetes_Scheduler_Considers_Resource_Limits_for_Scheduling)
+
+### Storage
+- [Myth: Kubernetes Cluster Can Have Only One Default StorageClass](k8s-core-myths/storage-myths/Kubernetes_Cluster_Can_Have_Only_One_Default_StorageClass)
+- [Myth: Kubernetes PersistentVolumeClaim Can Be Resized](k8s-core-myths/storage-myths/Kubernetes_PersistentVolumeClaim_Can_Be_Resized)
+- [Myth: ReadWriteOnce mode allows only a single Pod to access the volume](k8s-core-myths/storage-myths/ReadWriteOnce_mode_allows_only_a_single_Pod_to_access_the_volume)
+
+### Security
+- [Myth: Kubernetes Namespaces Provide Complete Isolation](k8s-core-myths/security-myths/Kubernetes_Namespaces_Provide_Complete_Isolation)
+- [Myth: Kubernetes Service Accounts Pull Container Images](k8s-core-myths/security-myths/Kubernetes_Service_Accounts_Pull_Container_Images)
+- [Myth: Pod Security Admission enforces security on running Pods](k8s-core-myths/security-myths/Pod_Security_Admission_enforces_security_on_running_Pods)
+
+### Pods & Containers
 - [Myth: Pods Don’t Consume Compute Resources Because They Are Logical](k8s-core-myths/pod-and-container-myths/Pods_Don’t_Consume_Compute_Resources_Because_They_Are_Logical)
 - [Myth: Kubernetes Has Only One Pod Type](k8s-core-myths/pod-and-container-myths/Kubernetes_Has_Only_One_Pod_Type)
 - [Myth: Init Containers can run in any order or in parallel](k8s-core-myths/pod-and-container-myths/Init_Containers_can_run_in_any_order_or_in_parallel)
 - [Myth: Kubernetes Pods Always Need a Service Account](k8s-core-myths/pod-and-container-myths/Kubernetes_Pods_Always_Need_a_Service_Account)
 
+---
 
+## Platform Myths
+
+### Amazon EKS
+- [Myth: EKS Control Plane Performance Can't Be Tuned](k8s-platform-myths/amazon-eks-myths/EKS-Control-Plane-Performance-Can’t-Be-Tuned)
+
+### Google GKE
+- [Myth: GKE Zonal Clusters Are Cheaper Than Regional Clusters](k8s-platform-myths/google-gke-myths/GKE_Zonal_Clusters_Are_Cheaper_Than_Regional_Clusters)
+
+
+
+---
+
+## Ecosystem Myths
+
+### Container Images
+
+- [Myth: Container images truly support build once deploy anywhere](k8s-ecosystem-myths/container-image-myths/Container_images_truly_support_build_once_deploy_anywhere)
+
+- [Myth: A Container Image Digest Uniquely Identifies One Image](k8s-ecosystem-myths/container-image-myths/A_Container_Image_Digest_Uniquely_Identifies_One_Image)
+
+### Container Registries
+- [Myth: OCI Registries Only Support Container Images](k8s-ecosystem-myths/oci-registry-myths/OCI_Registries_Only_Support_Container_Images)
+
+---
+
+🔥 Think you know Kubernetes? Explore all myths, experiment in your clusters, and subscribe for weekly insights on tricky Kubernetes questions!

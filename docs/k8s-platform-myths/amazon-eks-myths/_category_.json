@@ -1,0 +1,8 @@
+{
+  "label": "Amazon EKS Myths",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Debunking common misconceptions about EKS to help you make smarter, more reliable Kubernetes decisions."
+  }
+}
