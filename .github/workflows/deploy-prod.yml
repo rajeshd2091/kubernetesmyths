@@ -32,15 +32,15 @@ jobs:
       - name: Install deps
         run: npm ci
 
-      - name: Build Docusaurus
+      - name: Build
         env:
           BASE_URL: /
         run: npm run build
 
-      - name: Upload Pages artifact
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: build
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         uses: actions/deploy-pages@v4
