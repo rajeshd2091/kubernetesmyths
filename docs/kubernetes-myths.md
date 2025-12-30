@@ -33,7 +33,7 @@ This guide explores the most common **production pitfalls**, **architectural mis
 ## Jump to Section
 - [Core Kubernetes Myths](#core-kubernetes-myths)
   - [Architecture](#architecture)
-  - [Workloads & Pods](#workloads--pods)
+  - [Workloads](#workloads)
   - [Networking](#networking)
   - [Scheduling](#scheduling)
   - [Storage](#storage)
@@ -65,12 +65,13 @@ These myths touch on the fundamental architecture and primitives of Kubernetes.
 - [Myth: Image Garbage collector runs only when disk usage crosses a High-Threshold](k8s-core-myths/architecture-myths/Image_Garbage_collector_runs_only_when_disk_usage_crosses_a_High-Threshold)
 - [Myth: Kubelet can modify any Kubernetes object through the API server](k8s-core-myths/architecture-myths/Kubelet_can_modify_any_Kubernetes_object_through_the_API_server)
 
-### Workloads & Pods
+### Workloads
 - [Myth: Kubernetes automatically rolls back failed deployments](k8s-core-myths/workload-myths/Kubernetes_automatically_roll_back_failed_deployment)
 - [Myth: DaemonSet always schedules pods on all nodes](k8s-core-myths/workload-myths/DaemonSet_always_schedule_pods_on_all_nodes)
 - [Myth: Rolling Updates Are Only Supported by Deployments](k8s-core-myths/workload-myths/Rolling_Updates_Are_Only_Supported_by_Deployments)
 - [Myth: Deployment Supports All Pod Restart Policies](k8s-core-myths/workload-myths/Deployment_Supports_All_Pod_Restart_Policies)
 - [Myth: K8s Injects Svc Info Into A Pods Env Var](k8s-core-myths/workload-myths/K8s_Injects_Svc_Info_Into_A_Pods_Env_Var)
+- [Myth: Kubernetes Automatically Deletes Old ReplicaSets](k8s-core-myths/workload-myths/Kubernetes-Automatically-Deletes-Old-ReplicaSets)
 
 ### Networking
 - [Myth: ClusterIP Service is Only for Internal Traffic](k8s-core-myths/networking-myths/ClusterIP_Service_is_Only_for_Internal_Traffic)
@@ -101,6 +102,7 @@ These myths touch on the fundamental architecture and primitives of Kubernetes.
 - [Myth: Kubernetes Has Only One Pod Type](k8s-core-myths/pod-and-container-myths/Kubernetes_Has_Only_One_Pod_Type)
 - [Myth: Init Containers can run in any order or in parallel](k8s-core-myths/pod-and-container-myths/Init_Containers_can_run_in_any_order_or_in_parallel)
 - [Myth: Kubernetes Pods Always Need a Service Account](k8s-core-myths/pod-and-container-myths/Kubernetes_Pods_Always_Need_a_Service_Account)
+- [Myth: All Pods Are Created Using the API Server and Scheduler](k8s-core-myths/pod-and-container-myths/All-Pods-Are-Created-Using-the-API-Server-and-Scheduler)
 
 ---
 

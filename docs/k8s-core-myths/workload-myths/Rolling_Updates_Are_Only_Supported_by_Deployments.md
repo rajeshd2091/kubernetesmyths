@@ -15,10 +15,6 @@ Rolling Updates Extend Beyond Deployments. While Deployments use the default Rol
 - StatefulSets: Follow a rolling update pattern but update one Pod at a time in order.
 - DaemonSets: Perform rolling updates but have different scheduling constraints, ensuring Pods are only running on specific nodes.
 
-### Experiment & Validate
-Let’s look at a rolling update example for each controller.
-#TODO - Need to add proper example
-
 ### Key Takeaways
 - **Rolling updates are not exclusive to Deployments**—StatefulSets and DaemonSets also support them.
 - **Each controller has a different update pattern**—understanding them prevents unexpected behavior.

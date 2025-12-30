@@ -106,7 +106,7 @@ CONTAINER       IMAGE                                 CREATED           STATE   
 129fd7d382018   docker.io/library/nginx@sha256:...    11 minutes ago    Running    web     0          34533c6729106
 ```
 
-**Setp 3. Verify the Mirror Pod**
+**Step 3. Verify the Mirror Pod**
 
 You can see the mirror Pod on the API server:
 
