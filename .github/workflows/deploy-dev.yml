@@ -1,4 +1,4 @@
-name: Deploy Preview
+name: Deploy Docusaurus (Develop)
 
 on:
   push:
@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy-preview:
+  deploy-dev:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -29,20 +29,22 @@ jobs:
           node-version: 20
           cache: npm
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Clean & Install
+        run: |
+          rm -rf node_modules build .docusaurus
+          npm ci
 
-      - name: Build
+      - name: Build Docusaurus (Dev)
         env:
-          BASE_URL: /preview/
+          BASE_URL: /dev/
         run: npm run build
 
-      - name: Upload artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: build
 
-      - name: Deploy to Preview
+      - name: Deploy to GitHub Pages (/dev)
         uses: actions/deploy-pages@v4
         with:
           target-path: dev
