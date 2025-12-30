@@ -1,4 +1,4 @@
-name: Deploy to Prod
+name: Deploy Docusaurus (Prod)
 
 on:
   push:
@@ -23,24 +23,26 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
 
-      - name: Install deps
-        run: npm ci
+      - name: Clean & Install
+        run: |
+          rm -rf node_modules build .docusaurus
+          npm ci
 
-      - name: Build
+      - name: Build Docusaurus (Prod)
         env:
           BASE_URL: /
         run: npm run build
 
-      - name: Upload artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: build
 
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
