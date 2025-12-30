@@ -50,7 +50,7 @@ OCI registries are content-addressable storage systems.
 **Step 1: Verify image exist with single tag**
 
 
-![Image Tag Exists](/img/k8s-ecosystem-myths/image_tag_exist.jpg)
+![Image Tag Exists](/img/k8s-ecosystem-myths/Image_tag_exist.jpg)
 
 **Step 2: Delete a tag from Dockerhub**
 
