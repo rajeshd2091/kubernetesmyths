@@ -1,0 +1,8 @@
+{
+  "label": "Helm Chart Myths",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Helm is widely used to package and deploy applications on Kubernetes, yet many of its behaviors are misunderstood. This section breaks down common Helm Chart myths related to deployment order, hooks, upgrades, rollbacks, and state management, using real-world scenarios to clearly separate what Helm guarantees from what Kubernetes handles at runtime. The goal is to remove false expectations from Helm and help readers use it correctly, predictably, and safely in production environments"
+  }
+}

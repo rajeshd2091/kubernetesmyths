@@ -3,6 +3,6 @@
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "OCI-compliant registries, from Docker Hub to Harbor, often spark misconceptions around image tags, digests, immutability, and artifact support — leading to deployment and security issues."
+    "description": "Container images are a foundational part of cloud-native platforms, yet they are often treated as simple build artifacts rather than security-critical, immutable components. This section breaks down common Container Image myths related to immutability, tagging, image size, caching, vulnerability scanning, and runtime behavior, using real-world scenarios to separate assumptions from reality. The goal is to clarify how container images are built, distributed, and consumed in Kubernetes so teams can design safer, more reliable, and more predictable delivery pipelines."
   }
 }

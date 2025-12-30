@@ -1,0 +1,8 @@
+{
+  "label": "DevOps Myths",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "DevOps Myths is a practical exploration of common misconceptions around automation, CI/CD, culture, tooling, reliability, and security. This section separates marketing hype from operational reality, using real-world failures, hands-on experiments, and production lessons to explain what DevOps actually does—and does not—guarantee."
+  }
+}

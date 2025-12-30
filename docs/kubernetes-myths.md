@@ -44,8 +44,12 @@ This guide explores the most common **production pitfalls**, **architectural mis
   - [Google GKE](#google-gke)
 - [Ecosystem Myths](#ecosystem-myths)
   - [Container Images](#container-images)
-  - [Container Registries](#container-registries)
-
+  - [Container Registry](#container-registry)
+  - [Helm Chart](#helm-chart)
+- [Domain Myths](#domain-myths)
+  - [Application Development](#application-development)
+  - [DevOps](#devops)
+  - [SRE](#sre)
 ---
 
 ## Core Kubernetes Myths
@@ -60,11 +64,9 @@ These myths touch on the fundamental architecture and primitives of Kubernetes.
 - [Myth: Garbage collector deletes images as soon as pods stop using them](k8s-core-myths/architecture-myths/Garbage_collector_deletes_images_as_soon_as_pods_stop_using_them)
 - [Myth: Image Garbage collector runs only when disk usage crosses a High-Threshold](k8s-core-myths/architecture-myths/Image_Garbage_collector_runs_only_when_disk_usage_crosses_a_High-Threshold)
 - [Myth: Kubelet can modify any Kubernetes object through the API server](k8s-core-myths/architecture-myths/Kubelet_can_modify_any_Kubernetes_object_through_the_API_server)
-- [Myth: Pod requests are strictly guaranteed](k8s-core-myths/scheduling-myths/Pod_memory_requests_are_only_used_for_scheduling)
 
 ### Workloads & Pods
 - [Myth: Kubernetes automatically rolls back failed deployments](k8s-core-myths/workload-myths/Kubernetes_automatically_roll_back_failed_deployment)
-- [Myth: Complete application can be rolled back in Kubernetes](k8s-core-myths/workload-myths/Complete_application_can_be_rolled_back_in_Kubernetes)
 - [Myth: DaemonSet always schedules pods on all nodes](k8s-core-myths/workload-myths/DaemonSet_always_schedule_pods_on_all_nodes)
 - [Myth: Rolling Updates Are Only Supported by Deployments](k8s-core-myths/workload-myths/Rolling_Updates_Are_Only_Supported_by_Deployments)
 - [Myth: Deployment Supports All Pod Restart Policies](k8s-core-myths/workload-myths/Deployment_Supports_All_Pod_Restart_Policies)
@@ -81,6 +83,8 @@ These myths touch on the fundamental architecture and primitives of Kubernetes.
 - [Myth: A Higher-Priority Pod Will Always Preempt a Lower-Priority Pod](k8s-core-myths/scheduling-myths/A_Higher-Priority_Pod_Will_Always_Preempt_a_Lower-Priority_Pod)
 - [Myth: Kubernetes Has a Concept of Node Anti-Affinity](k8s-core-myths/scheduling-myths/Kubernetes_Has_a_Concept_of_Node_Anti-Affinity)
 - [Myth: Kubernetes Scheduler Considers Resource Limits for Scheduling](k8s-core-myths/scheduling-myths/Kubernetes_Scheduler_Considers_Resource_Limits_for_Scheduling)
+- [Myth: Pod memory requests are only used for scheduling](k8s-core-myths/scheduling-myths/Pod_memory_requests_are_only_used_for_scheduling)
+
 
 ### Storage
 - [Myth: Kubernetes Cluster Can Have Only One Default StorageClass](k8s-core-myths/storage-myths/Kubernetes_Cluster_Can_Have_Only_One_Default_StorageClass)
@@ -108,20 +112,36 @@ These myths touch on the fundamental architecture and primitives of Kubernetes.
 ### Google GKE
 - [Myth: GKE Zonal Clusters Are Cheaper Than Regional Clusters](k8s-platform-myths/google-gke-myths/GKE_Zonal_Clusters_Are_Cheaper_Than_Regional_Clusters)
 
-
-
 ---
 
 ## Ecosystem Myths
 
 ### Container Images
-
 - [Myth: Container images truly support build once deploy anywhere](k8s-ecosystem-myths/container-image-myths/Container_images_truly_support_build_once_deploy_anywhere)
-
 - [Myth: A Container Image Digest Uniquely Identifies One Image](k8s-ecosystem-myths/container-image-myths/A_Container_Image_Digest_Uniquely_Identifies_One_Image)
 
-### Container Registries
-- [Myth: OCI Registries Only Support Container Images](k8s-ecosystem-myths/oci-registry-myths/OCI_Registries_Only_Support_Container_Images)
+### Container Registry
+- [Myth: OCI Registries Only Support Container Images](k8s-ecosystem-myths/container-registry-myths/OCI_Registries_Only_Support_Container_Images)
+- [Myth: Deleting a Tag Deletes the Image from the Registry](k8s-ecosystem-myths/container-registry-myths/Deleting-a-Tag-Deletes-the-Image-from-the-Registry)
+
+### Helm Chart
+- [Myth: Helm Charts Deploy Kubernetes Resources in Any Order](k8s-ecosystem-myths/helm-chart-myths/Helm-Charts-Deploy-Kubernetes-Resources-in-Any-Order)
+- [Myth: Helm Tracks the Current State of Kubernetes Resources](k8s-ecosystem-myths/helm-chart-myths/Helm-Tracks-the-Current-State-of-Kubernetes-Resources)
+
+## Domain Myths
+
+### Application Development
+- [Myth: Applications Don’t Need Readiness or Liveness Probes](k8s-domain-myths/application-development-myths/Applications-Don’t-Need-Readiness-or-Liveness-Probes)
+- [Myth: Kubernetes Supports In-Place Application Upgrades](k8s-domain-myths/application-development-myths/Kubernetes-Supports-In-Place-Application-Upgrades)
+
+### DevOps
+- [Myth: Complete application can be rolled back in Kubernetes](k8s-domain-myths/devops-myths/Complete_application_can_be_rolled_back_in_Kubernetes)
+- [Myth: The order of Kubernetes resource deployment does not matter](k8s-domain-myths/devops-myths/The-order-of-Kubernetes-resource-deployment-does-not-matter) 
+
+### SRE
+- [Myth: Kubernetes Guarantees Application Self-Healing](k8s-domain-myths/sre-myths/Kubernetes-Guarantees-Application-Self-Healing)
+
+
 
 ---
 

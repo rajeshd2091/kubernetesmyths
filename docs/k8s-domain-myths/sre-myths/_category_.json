@@ -1,0 +1,8 @@
+{
+  "label": "SRE Myths",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "This section explores common Kubernetes beliefs within the Site Reliability Engineering (SRE) domain. It examines where platform assumptions diverge from real-world reliability, operations, and user impact."
+  }
+}
