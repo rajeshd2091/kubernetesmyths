@@ -103,6 +103,7 @@ These myths touch on the fundamental architecture and primitives of Kubernetes.
 - [Myth: Init Containers can run in any order or in parallel](k8s-core-myths/pod-and-container-myths/Init_Containers_can_run_in_any_order_or_in_parallel)
 - [Myth: Kubernetes Pods Always Need a Service Account](k8s-core-myths/pod-and-container-myths/Kubernetes_Pods_Always_Need_a_Service_Account)
 - [Myth: All Pods Are Created Using the API Server and Scheduler](k8s-core-myths/pod-and-container-myths/All-Pods-Are-Created-Using-the-API-Server-and-Scheduler)
+- [Myth: CPU Requests Guarantee Reserved CPU for Containers](k8s-core-myths/pod-and-container-myths/CPU-Requests-Guarantee-Reserved-CPU-for-Containers)
 
 ---
 
@@ -110,9 +111,13 @@ These myths touch on the fundamental architecture and primitives of Kubernetes.
 
 ### Amazon EKS
 - [Myth: EKS Control Plane Performance Can't Be Tuned](k8s-platform-myths/amazon-eks-myths/EKS-Control-Plane-Performance-Can’t-Be-Tuned)
+- [Myth: EKS Has a Fixed Maximum Pod Count per Node](k8s-platform-myths/amazon-eks-myths/EKS-Has-a-Fixed-Maximum-Pod-Count-per-Node)
 
 ### Google GKE
 - [Myth: GKE Zonal Clusters Are Cheaper Than Regional Clusters](k8s-platform-myths/google-gke-myths/GKE_Zonal_Clusters_Are_Cheaper_Than_Regional_Clusters)
+- [Myth: GKE Clusters Without a Release Channel Are Never Auto-Upgraded](k8s-platform-myths/google-gke-myths/GKE-Clusters-Without-a-Release-Channel-Are-Never-Auto-Upgraded)  
+
+
 
 ---
 
@@ -125,6 +130,7 @@ These myths touch on the fundamental architecture and primitives of Kubernetes.
 ### Container Registry
 - [Myth: OCI Registries Only Support Container Images](k8s-ecosystem-myths/container-registry-myths/OCI_Registries_Only_Support_Container_Images)
 - [Myth: Deleting a Tag Deletes the Image from the Registry](k8s-ecosystem-myths/container-registry-myths/Deleting-a-Tag-Deletes-the-Image-from-the-Registry)
+- [Myth: OCI-Native Registries and OCI-Compliant Registries Are Different](k8s-ecosystem-myths/container-registry-myths/OCI-Native-Registries-and-OCI-Compliant-Registries-Are-Different) 
 
 ### Helm Chart
 - [Myth: Helm Charts Deploy Kubernetes Resources in Any Order](k8s-ecosystem-myths/helm-chart-myths/Helm-Charts-Deploy-Kubernetes-Resources-in-Any-Order)
