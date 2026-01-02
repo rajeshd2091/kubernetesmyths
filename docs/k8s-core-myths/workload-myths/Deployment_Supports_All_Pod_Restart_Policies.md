@@ -13,18 +13,20 @@ Many believe that Deployments can be used with any Kubernetes Pod restart policy
 ### The Reality: 
 Deployment = `restartPolicy: Always` Only!
 In Kubernetes, Deployments are designed to manage long-running applications. That means:
-- If a Pod fails, Kubernetes restarts it.
-- If a node crashes, a new Pod is scheduled on another node.
+- If a Container fails, Kubernetes restarts it.
+- If a Node crashes, a new Pod is scheduled on another node.
 - Any restart policy other than Always is rejected!
 
 ### Experiment & Validate
-Let’s try using `restartPolicy: OnFailure` inside a Deployment and see what happens:
 
-```
+
+**Step 1: Create Deployment with `restartPolicy: OnFailure`**
+
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-deployment
+  name: onfailure-deployment
 spec:
   replicas: 3
   selector:
@@ -41,12 +43,96 @@ spec:
         image: busybox
         command: ["sh", "-c", "echo Hello && exit 1"]
 ```
-What Happens?
-Deployment rejects `OnFailure` and throw an error!
+
+Create a Deployment:
+
+```bash
+kubectl apply  -f ./onfailure-deployment.yaml
 ```
-The Deployment "my-deployment" is invalid: spec.template.spec.restartPolicy: Unsupported value: "OnFailure": supported values: "Always"
+
+Deployment rejects `OnFailure` and throw an error!
+
+```sh
+The Deployment "onfailure-deployment" is invalid: spec.template.spec.restartPolicy: Unsupported value: "OnFailure": supported values: "Always"
 ```
 Kubernetes rejects the Deployment, as it does not allow restart policies other than `Always`.
+
+
+**Step 2: Create Deployment with `restartPolicy: Never`**
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: never-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: test-app
+  template:
+    metadata:
+      labels:
+        app: test-app
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: test-container
+        image: busybox
+        command: ["sh", "-c", "echo Hello && exit 1"]
+```
+
+Create a Deployment:
+
+```bash
+kubectl apply  -f ./never-deployment.yaml
+```
+
+Deployment rejects `Never` and throw an error!
+
+```sh
+The Deployment "never-deployment" is invalid: spec.template.spec.restartPolicy: Unsupported value: "Never": supported values: "Always"
+```
+Kubernetes rejects the Deployment, as it does not allow restart policies other than `Always`.
+
+
+
+**Step 3: Create Deployment with `restartPolicy: Always`**
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: always-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: test-app
+  template:
+    metadata:
+      labels:
+        app: test-app
+    spec:
+      restartPolicy: Always
+      containers:
+      - name: test-container
+        image: busybox
+        command: ["sh", "-c", "echo Hello && exit 1"]
+```
+
+Create a Deployment:
+
+```bash
+kubectl apply  -f ./always-deployment.yaml
+```
+
+Deployment gets created
+
+```sh
+deployment.apps/always-deployment created
+```
+
 
 ### Key Takeaways
 - **Deployments only support** `restartPolicy: Always`—other policies are rejected.

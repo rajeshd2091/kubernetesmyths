@@ -18,6 +18,7 @@ Expect DaemonSet to Run on Every Node? Not So Fast! Many assume that a DaemonSet
 ### Experiment & Validate
 Let’s see a example where DaemonSet does NOT schedule Pods on all nodes:
 Node Selector: DaemonSet Pods Only on Labeled Node
+
 ```
 apiVersion: apps/v1
 kind: DaemonSet
