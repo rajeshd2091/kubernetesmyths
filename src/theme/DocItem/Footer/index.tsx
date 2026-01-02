@@ -47,7 +47,7 @@ export default function FooterWrapper(props) {
     <>
       <OriginalFooter {...props} />
 
-      <MythSeal />
+
 
       {/* Feedback UI */}
       <div style={{
