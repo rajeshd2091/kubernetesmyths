@@ -59,7 +59,7 @@ export default function FooterWrapper(props) {
         background: "#fafafa"
       }}>
         <div style={{ fontSize: "1rem", fontWeight: 600 }}>
-          Was this Myth helpful?
+          Did this myth change how you understand Kubernetes?
         </div>
 
         <div id="feedback" style={{ marginTop: "12px" }}>
