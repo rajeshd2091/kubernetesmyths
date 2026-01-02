@@ -103,7 +103,8 @@ const config: Config = {
           position: 'left',
 
         },
-        { to: '/the-kubernetes-mythologist', label: 'The Kubernetes Mythologist', position: 'right' },
+        { to: '/the-kubernetes-mythologist', label: 'Kubernetes Mythologist', position: 'right' },
+        { to: '/the-kubernetes-mythicist', label: 'Kubernetes Mythicist', position: 'right' },
         {
           href: 'https://github.com/kubernetes-myths/website',
           label: 'GitHub',
@@ -113,49 +114,8 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Kubernetes Myths',
-          items: [
-            {
-              label: 'Architecture Myths',
-              to: '/category/architecture-myths',
-            },
-            {
-              label: 'Workload Myths',
-              to: '/category/workload-myths',
-            },
-            {
-              label: 'Networking Myths',
-              to: '/category/networking-myths',
-            },
-            {
-              label: 'Storage Myths',
-              to: '/category/storage-myths',
-            },
-            {
-              label: 'Security Myths',
-              to: '/category/security-myths',
-            },
-          ],
-        },
-        {
-          title: 'The Kubernetes Mythologist',
-          items: [
-            {
-              label: 'Linkedin',
-              href: 'https://www.linkedin.com/in/rajesh-deshpande-1058b9151/',
-            },
-            {
-              label: 'Github',
-              href: 'https://github.com/rajeshd2091',
-            },
 
-          ],
-        },
-
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Kubernetes Myths.`,
+      copyright: `Made with Curiosity, Care, and Countless Kubernetes Incidents.`,
     },
     prism: {
       theme: prismThemes.github,
