@@ -78,7 +78,7 @@ spec:
         image: nginx:1.25
 ```
 
-Apply it:
+Create a Deployment:
 
 ```sh
 kubectl apply -f rs-history-demo.yaml
