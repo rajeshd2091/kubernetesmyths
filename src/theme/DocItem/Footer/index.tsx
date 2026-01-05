@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import OriginalFooter from "@theme-original/DocItem/Footer";
+import MythSeal from "@site/src/components/AuthorSection";
 
 export default function FooterWrapper(props) {
   useEffect(() => {
@@ -46,37 +47,39 @@ export default function FooterWrapper(props) {
     <>
       <OriginalFooter {...props} />
 
-   {/* Feedback UI */}
-<div style={{
-  marginTop: "50px",
-  padding: "20px",
-  border: "1px solid #e5e7eb",
-  borderRadius: "12px",
-  textAlign: "center",
-  background: "#fafafa"
-}}>
-  <div style={{ fontSize: "1rem", fontWeight: 600 }}>
-    Was this Myth helpful?
-  </div>
 
-  <div id="feedback" style={{ marginTop: "12px" }}>
-    <button id="thumbs-up" style={{
-      fontSize: "22px",
-      padding: "6px 10px",
-      cursor: "pointer"
-    }}>👍</button>
 
-    <span id="count-up" style={{ marginLeft: "6px", marginRight: "20px" }}>0</span>
+      {/* Feedback UI */}
+      <div style={{
+        marginTop: "50px",
+        padding: "20px",
+        border: "1px solid #e5e7eb",
+        borderRadius: "12px",
+        textAlign: "center",
+        background: "#fafafa"
+      }}>
+        <div style={{ fontSize: "1rem", fontWeight: 600 }}>
+          Did this myth change how you understand Kubernetes?
+        </div>
 
-    <button id="thumbs-down" style={{
-      fontSize: "22px",
-      padding: "6px 10px",
-      cursor: "pointer"
-    }}>👎</button>
+        <div id="feedback" style={{ marginTop: "12px" }}>
+          <button id="thumbs-up" style={{
+            fontSize: "22px",
+            padding: "6px 10px",
+            cursor: "pointer"
+          }}>👍</button>
 
-    <span id="count-down" style={{ marginLeft: "6px" }}>0</span>
-  </div>
-</div>
+          <span id="count-up" style={{ marginLeft: "6px", marginRight: "20px" }}>0</span>
+
+          <button id="thumbs-down" style={{
+            fontSize: "22px",
+            padding: "6px 10px",
+            cursor: "pointer"
+          }}>👎</button>
+
+          <span id="count-down" style={{ marginLeft: "6px" }}>0</span>
+        </div>
+      </div>
     </>
   );
 }
