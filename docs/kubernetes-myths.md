@@ -104,6 +104,8 @@ These myths touch on the fundamental architecture and primitives of Kubernetes.
 - [Myth: Kubernetes Pods Always Need a Service Account](k8s-core-myths/pod-and-container-myths/Kubernetes_Pods_Always_Need_a_Service_Account)
 - [Myth: All Pods Are Created Using the API Server and Scheduler](k8s-core-myths/pod-and-container-myths/All-Pods-Are-Created-Using-the-API-Server-and-Scheduler)
 - [Myth: CPU Requests Guarantee Reserved CPU for Containers](k8s-core-myths/pod-and-container-myths/CPU-Requests-Guarantee-Reserved-CPU-for-Containers)
+- [Myth: Pause Container Always Runs with a fixed UID(65535)](k8s-core-myths/pod-and-container-myths/Pause-Container-Always-Runs-as-a-fixed-UID-65535)
+- [Myth: A UID must exist as a Linux user to run a container](k8s-core-myths/pod-and-container-myths/A-UID-must-exist-as-a-Linux-user-to-run-a-container)
 
 ---
 
