@@ -128,6 +128,8 @@ These myths touch on the fundamental architecture and primitives of Kubernetes.
 ### Container Images
 - [Myth: Container images truly support build once deploy anywhere](k8s-ecosystem-myths/container-image-myths/Container_images_truly_support_build_once_deploy_anywhere)
 - [Myth: A Container Image Digest Uniquely Identifies One Image](k8s-ecosystem-myths/container-image-myths/A_Container_Image_Digest_Uniquely_Identifies_One_Image)
+- [Myth: Dockerfile COPY preserves file ownership and permissions from the host](k8s-ecosystem-myths/container-image-myths/Dockerfile-COPY-preserves-file-ownership-and-permissions-from-the-host)
+
 
 ### Container Registry
 - [Myth: OCI Registries Only Support Container Images](k8s-ecosystem-myths/container-registry-myths/OCI_Registries_Only_Support_Container_Images)
